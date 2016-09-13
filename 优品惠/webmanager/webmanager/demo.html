@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+demo
+<input type="text" id="txt1"/>
+<p id="p1"></p>
+<input type="button" value="获取用户" id="bt1"/>
+<script>
+    var oTxt=document.getElementById("txt1");
+    var oP1=document.getElementById("p1");
+    /*oTxt.onblur=function(){
+        var nameValue=this.value;
+        var xhr=new XMLHttpRequest();
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4){
+                if(xhr.status==200){
+                    var result=eval("("+xhr.responseText+")");
+
+                    if(result==1){
+                        oP1.innerHTML="用户已存在";
+                    }else{
+                        oP1.innerHTML="可用";
+                    }
+                }
+            }
+        }
+        xhr.open("get","user/CheckUserNameGet?username="+nameValue,true);
+        xhr.send();
+    }*/
+
+    oTxt.onblur=function(){
+        var nameValue=this.value;
+        var xhr=new XMLHttpRequest();
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4){
+                if(xhr.status==200){
+                    var result=eval("("+xhr.responseText+")");
+
+                    if(result==1){
+                        oP1.innerHTML="用户已存在";
+                    }else{
+                        oP1.innerHTML="可用";
+                    }
+                }
+            }
+        }
+        xhr.open("post","user/CheckUserName",true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.send("username="+nameValue);
+    }
+</script>
+</body>
+</html>

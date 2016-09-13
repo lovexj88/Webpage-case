@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>优品惠食品</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/food.css"/>
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/moveUtil.js"></script>
+	</head>
+	<body>
+		<div class="headerBox" id="top">
+			<div class="header">
+				<img src="img/header.jpg" />
+			</div>
+		</div>
+		
+		
+		<div class="gonggaoBox">
+			<div class="gonggao">
+				<div class="gonggaoLeft">
+					<img src="img/gonggao.png"/>
+					<span>公告：优品惠（优购物）5周年庆，盛大...</span>
+				</div>
+				<div class="gonggaoRight">
+					<ul>
+						<li><a href="register.html" class="noBorder">注册</a></li>
+						<li><a href="login.html">登录</a></li>
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">物流查询</a></li>
+						<li><a href="#">我的关注</a></li>
+						<li><a href="#">资讯</a></li>
+						<li><a href="#">品牌馆</a></li>
+						<li><a href="#">手机优惠品</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="logoBox">
+			<div class="logo">
+				<div class="logoLeft">
+					<a href="index.html"><img src="img/logo.png" /></a>
+				</div>
+				<div class="logoCenter">
+					<input type="text" value="" id="searchkuang" placeholder="请输入商品名称或货号" />
+					<a href="#" id="search">搜索</a>
+				</div>
+				<div class="logoRight">
+					<div>
+						<img src="img/wuche.gif" />
+					</div>
+					<div class="gouwuche">
+						<img src="img/shoppingCar.png" />
+						<a href="#">我的购物车</a>
+						<span class="shoppingNum">0</span>
+						<div class="showCarNo">
+							<span></span>
+							<i>购物车还没有商品，快去挑选吧~</i>
+						</div>
+						<div class="showCarHas">
+							<div class="showTop">
+								<span></span>
+								<ul id="showInfo">
+									
+								</ul>
+							</div>
+							<div class="showBottom">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="navBox">
+			<div class="nav">
+				<div class="navLeft">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li class="icon-tv"><img src="img/icon-tv.png"><a href="shipin.html">视频</a></li>
+						<li class="active"><a href="food.html">食品</a></li>
+						<li><a href="jiaju.html">家居</a></li>
+						<li><a href="meizhuang.html">美妆</a></li>
+						<li><a href="fushi.html">服饰</a></li>
+						<li><a href="haiwaitao.html">海外购</a></li>
+					</ul>
+				</div>
+				<div class="navRight">
+					<div class="navShow">
+						<dl class="navShow1">
+							<dt>
+								<img src="img/newsix_03.png" />
+								<a href="list.html?id=10">品质厨房</a>
+							</dt>
+							<dd>
+								<ul>
+									<li><a href="list.html?id=11">电视热销</a></li>
+									<li><a href="list.html?id=12">品质厨具</a></li>
+									<li><a href="list.html?id=13">厨房电器</a></li>
+									<li><a href="list.html?id=14">厨房用品</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="navShow2">
+							<dt>
+								<img src="img/newsix_05.png" />
+								<a href="list.html?id=20">美食·民生</a>
+							</dt>
+							<dd>
+								<ul>
+									<li><a href="list.html?id=21">进口食品</a></li>
+									<li><a href="list.html?id=22">营养保健</a></li>
+									<li><a href="list.html?id=23">特产食品</a></li>
+									<li><a href="list.html?id=24">粮油干货</a></li>
+									<li><a href="list.html?id=25">酒水茶饮</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="navShow3">
+							<dt>
+								<img src="img/newsix_07.png" />
+								<a href="list.html?id=30">健康生活</a>
+							</dt>
+							<dd>
+								<ul>
+									<li><a href="list.html?id=31">优质睡眠</a></li>
+									<li><a href="list.html?id=32">家居装饰</a></li>
+									<li><a href="list.html?id=33">清洁收纳</a></li>
+									<li><a href="list.html?id=34">家庭健身</a></li>
+									<li><a href="list.html?id=35">生活电器</a></li>
+									<li><a href="list.html?id=36">日用配件</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="navShow4">
+							<dt>
+								<img src="img/newsix_09.png" />
+								<a href="list.html?id=40">魅力穿戴</a>
+							</dt>
+							<dd>
+								<ul>
+									<li><a href="list.html?id=41">服装内衣</a></li>
+									<li><a href="list.html?id=42">鞋包配饰</a></li>
+									<li><a href="list.html?id=43">旅游户外</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="navShow5">
+							<dt>
+								<img src="img/newsix_13.png" />
+								<a href="list.html?id=50">珠宝收藏</a>
+							</dt>
+							<dd>
+								<ul>
+									<li><a href="list.html?id=51">珍珠彩宝</a></li>
+									<li><a href="list.html?id=52">翡翠玉石</a></li>
+									<li><a href="list.html?id=53">天然木饰</a></li>
+									<li><a href="list.html?id=54">文化收藏</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="navShow6">
+							<dt>
+								<img src="img/newsix_11.png" />
+								<a href="list.html?id=60">美肤靓装</a>
+							</dt>
+							<dd>
+								<ul>
+									<li><a href="list.html?id=61">品牌护肤</a></li>
+									<li><a href="list.html?id=62">洗护护理</a></li>
+									<li><a href="list.html?id=63">彩妆香水</a></li>
+									<li><a href="list.html?id=64">美容仪器</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="banner">
+			<img src="img/food.png" />
+		</div>
+		
+		<div class="jptj">
+			<div class="jptj_tip">
+				<h3>
+					<img src="img/jptj.png" />
+				</h3>
+				<span>
+					<a href="#">进口食品</a> | 
+					<a href="#">品质厨具</a> | 
+					<a href="#">清洁收纳</a>
+				</span>
+			</div>
+			<div class="jptj_pic">
+				<ul>
+					<li>
+						<a href="#"><img src="img/jptj1.png" /></a>
+					</li>
+					<li class="twoPic">
+						<a href="#"><img src="img/jptj2.png" /></a>
+						<a href="#"><img src="img/jptj3.png" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/jptj4.jpg" /></a>
+					</li>
+					<li class="twoPic">
+						<a href="#"><img src="img/jptj5.png" /></a>
+						<a href="#"><img src="img/jptj6.png" /></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="jrsx">
+			<div class="jrsx_tip">
+				<h3>
+					<a href="#"><img src="img/jrsx.png" /></a>
+				</h3>
+			</div>
+			<div class="globalBottom">
+				<!--<dl>
+					<dt><a href="#"><img src="img/pic1.jpg" /></dt>
+					<dd>
+						<p class="goodTip"><a href="#">双立人TWIN NovaIII厨房能手中式炒</a></p>
+						<p class="goodIntro"><a href="#">【买手说】中式炒锅爆炒快速美味，不锈钢耐用，抗腐蚀，锅底压制工艺</a></p>
+						<p class="money"><a href="#" class="price">￥135</a><a href="#" class="kucun"><span>569人</span>已购买</a></p>
+					</dd>
+					<p class="goodLast">品牌，国内发货</p>
+				</dl>-->
+			</div>
+		</div>
+		
+		<div class="footerBox">
+			<div class="footer">
+				<div class="footer1">
+					<img src="img/footer_ad.jpg" />
+				</div>
+				<div class="footer2">
+					<dl>
+						<dt>新手上路</dt>
+						<dd><a href="#">新用户注册</a></dd>
+						<dd><a href="#">忘记密码</a></dd>
+						<dd><a href="#">购物流程</a></dd>
+					</dl>
+					<dl>
+						<dt>支付配送</dt>
+						<dd><a href="#">货到付款</a></dd>
+						<dd><a href="#">支付宝</a></dd>
+						<dd><a href="#">配送方式</a></dd>
+					</dl>
+					<dl>
+						<dt>会员服务</dt>
+						<dd><a href="#">服务承诺</a></dd>
+						<dd><a href="#">会员制度</a></dd>
+						<dd><a href="#">积分介绍</a></dd>
+						<dd><a href="#">退换货原则	</a></dd>
+					</dl>
+					<dl class="noBorder">
+						<dt>关于优品惠</dt>
+						<dd><a href="#">企业介绍</a></dd>
+						<dd><a href="#">联系我们</a></dd>
+						<dd><a href="#">招商专区</a></dd>
+					</dl>
+					<dl class="tele">
+						<dt>
+							<img src="img/foot_ewm.jpg" width="80" height="80" />
+							<i>手机优品惠</i>
+							<em>（优购物）</em>
+						</dt>
+						<dd>
+							<img src="img/foot_dh.jpg" />
+						</dd>
+					</dl>
+				</div>
+				</div>
+				<div class="footer3">
+					<p class="href">
+						<a target="_blank" href="http://www.ugoshop.com">首页</a> | 
+						<a target="_blank" href="http://www.ugoshop.com/about_index.php">关于优品惠</a> |
+					    <a target="_blank" href="/about_index.php?company=ugo">优购物</a> |
+						<a target="_blank" href="http://www.ugoshop.com/about_contact.php">联系我们</a> | 
+						<a target="_blank" href="http://www.ugoshop.com/about_join.php">招贤纳士</a> | 
+						<a target="_blank" href="http://www.ugoshop.com/about_zhaoshang.php">招商专区</a> | 
+						<a target="_blank" href="http://scm.17ugo.com/">供应商入口</a> | 
+						<a target="_blank" href="http://www.ugoshop.com/link.php">友情链接</a> | 
+						<a target="_blank" href="http://www.ugoshop.com/sitemap.html">网站地图</a> | 
+						<a target="_blank" href="http://info.ugoshop.com/">资讯中心</a> | 
+						<a target="_blank" href="http://www.ugoshop.com/review.html">评论</a> |
+						<a target="_blank" href="http://www.ugoshop.com/photo.html"> 图片</a>
+					</p>
+					<p class="friendHref">
+						<em>友情链接：</em>
+						<a target="_blank" href="http://www.vmall.com/">华为商城</a>
+						<a target="_blank" href="http://www.zocai.com/">佐卡伊珠宝网</a>
+						<a target="_blank" href="http://www.xianbey.com/">华强北</a>
+						<a target="_blank" href="http://www.taoxie.com">淘鞋网</a>
+						<a target="_blank" href="http://www.go.cn">团购王</a>
+						<a target="_blank" href="http://www.lingshi.com/">中国零食网</a>
+						<a target="_blank" href="http://www.wbiao.cn/">腕表名表</a>
+						<a target="_blank" href="http://product.pchouse.com.cn">太平洋家居产品库</a>
+						<a target="_blank" href="http://www.zhigou.com/">网上购物</a>
+						<a target="_blank" href="http://www.lingtuan.com/">团购网</a>
+						<a target="_blank" href="http://www.zbird.com/">钻石</a>
+						<a target="_blank" href="http://www.ccoo.cn/">城市联盟</a>
+						<a target="_blank" href="http://www.jufengshang.com/">手表</a>
+						<a target="_blank" href="http://www.jiukuaiyou.com/">九块邮</a>
+						<a target="_blank" href="http://www.kela.cn/">婚礼珠宝</a>
+						<a target="_blank" href="http://www.kaitao.cn/">如</a>
+					</p>
+					<p class="copyright">优品惠（优购物）全球优品特卖网站 专属于千万女性的优品特卖网站,优品惠（优购物）电视购物官方网站,100%正品保证 支持货到付款.</p>
+    				<p class="copyright">Copyright©2007-2015   北京优购文化发展有限公司版权所有   京ICP备14018505号   食品流通许可证编号SP1103021310006741(1-1)</p>
+    				<p class="copyright"> 公司地址:北京市经济技术开发区同济南路19号   服务热线：400-707-0707</p>
+				</div>
+			</div>
+			<div class="fixedRight">
+				<ul class="fixedRight1">
+					<li class="right1">
+						<p></p>
+						<div class="loginBox">
+							<dl>
+								<dt>
+									<img src="img/touxiang.jpg" />
+								</dt>
+								<dd>
+									你好！请&nbsp;<a href="login.html">登录</a>&nbsp;|&nbsp;<a href="register.html">注册</a>
+								</dd>
+							</dl>
+							<div>
+								<a href="#">我的订单</a>
+								<a href="#">优惠券</a>
+							</div>
+						</div>
+					</li>
+					<li class="right2">
+						<span class="shoppingNum">0</span>
+						<em><a href="gouwuche.html">购物车</a></em>
+						<p></p>
+					</li>
+					<li class="right3">
+						<p></p>
+						<em><a href="#">我的关注</a></em>
+					</li>
+					<li class="right4">
+						<p></p>
+						<em><a href="#">在线客服</a></em>
+					</li>
+				</ul>
+				<ul class="fixedRight2">
+					<li class="right5">
+						<p></p>
+						<img src="img/erweima.jpg" />
+					</li>
+					<li class="right6">
+						<p></p>
+						<em><a href="#">调查问卷</a></em>
+					</li>
+					<li class="right7">
+						<p></p>
+						<em><a href="#top">返回顶部</a></em>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<script src="js/cookieBox.js"></script>
+		<script src="js/userCheck.js"></script>
+		<script>
+			$(function(){
+				ajaxUtil(1);
+				function ajaxUtil(index){
+					$.ajax({
+						type: "GET",
+						url: "http://localhost:8080/product/GetProductsByPage_get?pagesize=300&pageindex="+index,
+						success: function(data){
+							var dataJson=JSON.parse(data);
+							if(dataJson.length==0){
+								return;
+							}
+							else{
+								for(var i=0;i<dataJson.length;i++){
+									if(dataJson[i].Id.substring(0,1)!=0){
+										var strData=JSON.parse(dataJson[i].Data);
+										if(strData.id.substring(0,1)=="2"){
+											var str="<dl><dt><a href=\"detail.html?id="+strData.id+"\"><img src=\"pictures/"+strData.imgsrc+"\" /></dt>";
+											str+="<dd><p class=\"goodTip\"><a href=\"detail.html?id="+strData.id+"\">"+strData.name+"</a></p>";
+											str+="<p class=\"goodIntro\"><a href=\"detail.html?id="+strData.id+"\">"+strData.intro+"</a></p>";
+											str+="<p class=\"money\"><a href=\"detail.html?id="+strData.id+"\" class=\"price\">￥"+strData.price+"</a><a href=\"#\" class=\"kucun\"><span>569人</span>已购买</a></p>";
+											str+="</dd><p class=\"goodLast\">品牌，国内发货</p></dl>";
+											$(".globalBottom").append(str);
+										}
+									}
+								}
+							}
+						},
+						error:function(){
+							alert("获取数据失败!");
+						}	 
+					});
+				}
+			})
+		</script>
+		<script src="js/fixedShow.js"></script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+body{background: #fff;}
+.fixedLeft a{position: fixed;left: 0;top:300px;width: 124px;height: 235px;background: url(../img/logEWM.gif);}
+
+.register{width: 968px;height: 112px;margin: 0 auto;}
+.registerTopImg{padding-top: 25px;width: 500px;}
+.leftImg{float: left;margin-top: 10px;}
+.relogo{float: left;width: 168px;height: 57px;background: url(../img/welreg_01.gif) no-repeat 0 0;}
+.has{float: right;color: #777;font: 12px/60px "宋体";}
+.has a{color: #0089CF;}
+
+.regnav{height: 42px;width: 968px;margin: 0 auto;}
+.regnav ul li {float: left;margin-right: 2px;width: 225px;height: 42px;background: url(../img/welreg_01.gif) 0 -58px no-repeat;
+    		   line-height: 42px; font-size: 14px;color: #777777;font-weight: 600;text-align: center;}
+.regnav1 a{color: #fff;}
+.regnav2 a{color: #777;}
+.regnav ul .regnav2{background: url(../img/welreg_01.gif) 0 -102px;color: #777;}
+
+.tianxie{width: 964px;height: 410px;border: 2px solid #ff8400;margin: 0 auto;padding-top: 45px;font-family: "宋体";}
+.tianxie p{height: 52px;}
+.tianxie p span{float: left;font-size: 12px;text-align: right;width: 187px;padding-right: 15px;height: 37px;line-height: 37px;color: #666666;}
+.tianxie em{width: 340px;height: 25px;float: left;padding: 5px 0 5px 10px;border: 1px solid #a2a2a2;}
+.tianxie em input{line-height: 24px;border: none;width:314px;float: left;}
+.tianxie em i{float: left;width: 16px;height: 16px;background:url(../img/welland.gif) 0 -229px;margin-top: 3px;}
+.yanzheng span{float: left;}
+.yanzheng input{float: left;font: 15px Arial;color: #222;width: 102px;padding: 5px 10px 5px 10px;height: 25px;line-height: 25px;border: 1px solid #a2a2a2;}
+.yanzheng em{float: left;width: 89px;height: 30px;border: none;margin: 3px 5px 0;padding: 0;}
+.yanzheng i{line-height: 36px;font-size: 12px;color: #000;}
+.yanzheng i a{padding-left: 5px;color:#0089cf;}
+.yanzheng i a:hover{text-decoration: underline;}
+.pwdIn em i,.repwdIn em i{background-position: 0 -251px;}
+.duanxin em{width: 124px;}
+.duanxin em input{width:98px}
+.duanxin a{width: 126px;height: 26px;border: 1px solid #D3D3D3;float: left;margin: 4px 0 0 10px;border-radius: 3px;background: #f8f8f8;font-size: 12px;color: #858585;line-height: 26px;text-align: center;}
+.readme input{float: left;width: 13px;height: 13px;}
+.readme i{font-size: 12px;color: #000;float: left;}
+.readme a{float: left;color: #0089CF;font-size: 12px;}
+.tijiao a{float: left;width: 126px;height: 33px;opacity: 0.6;background: url(../img/welreg_01.gif) no-repeat 0 -175px;}
+.trouble{font-size: 12px;}
+.trouble a{color:#0089CF;}
+.trouble i{color: #eb0007;font: 13px/16px "微软雅黑";}
+.checkInfo{font-size: 12px;}
+.repwdIn b,.phoneIn b{font-size: 12px;line-height: 36px;padding-left: 20px;}
+
+#reg2{display: none;}
+
+.border{margin-top: 50px;height: 1px;background: #e3e3e3;}

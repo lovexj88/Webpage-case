@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.video{width: 1000px;height: 380px;margin: 25px auto 0;}
+.videoLeft{width: 760px;height: 377px;border-top: 2px solid #222222;background-color: #fff;float: left;}
+.videoLeft dt{float: left;}
+.videoLeft dd{float: left;width: 206px;height: 377px;border-right:1px solid #ddd ;border-bottom:1px solid #ddd ;}
+.videoLeft dd h3{color: #222;font-size: 14px;line-height: 40px;height: 40px;padding-left: 15px;font-weight: normal;}
+.new_p{color: #f70800;font-size: 14px;font-weight: 700;margin-right: 10px;padding-left: 15px;}
+.qianggou{background-color: #ff504a;width: 176px;border-radius: 3px;display: inline-block;font-size: 12px; height: 28px;line-height: 28px;margin: 8px 0 0 15px;text-align: center;}
+.qianggou a{color: #fff;}
+.go_phone{border-top: 1px solid #eee;height: 35px;margin-top: 20px;}
+.go_phone a{display: block;height: 35px; line-height: 35px;padding-left: 62px;position: relative;color: #222;font-size: 12px;}
+.go_phone a i{display: block;position: absolute;width: 14px;height: 18px;left: 40px;top: 9px;background: url(../img/videoBg.png) no-repeat -126px -109px;}
+.videoRight{width: 228px;height: 377px;float: right;border: 1px solid #ddd;background: #fff;}
+.liveList{padding-left: 20px;}
+.liveList a{float: left;font-size: 14px;width: 78px;height: 42px;text-align: center;color: #222;line-height: 42px;}
+.mar32{margin-right: 32px;}
+.liveList .activeList{color: #f70800;height: 39px;line-height: 42px;border-bottom: 3px solid #f70800;overflow: hidden;}
+.liveContent{height: 340px;}
+.go_zzb a{border-top: 1px solid #ddd;display: block;color: #222;height: 35px;line-height: 35px;padding-left: 91px;position: relative;font-size: 12px;}
+.go_zzb a i{display: block;position: absolute;width: 16px;height: 18px;left: 65px;top: 9px;background: url(../img/videoBg.png) no-repeat -123px -77px;}
+
+.huodong{padding-top: 40px;text-align: center;height: 20px;line-height: 20px;margin-bottom: 23px;border-bottom: 2px solid #333;position: relative;}
+
+.miaosha{width: 1012px;margin: 40px auto 0;overflow: hidden;}
+.miaosha img{margin: 5px;}
+
+.jrtj{width: 1020px;margin: 0 auto;}
+.jrtj h3{width: 156px;padding-right: 2px;height: 42px;line-height: 42px;}
+
+
+
+

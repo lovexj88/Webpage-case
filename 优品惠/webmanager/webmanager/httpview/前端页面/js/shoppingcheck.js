@@ -1,0 +1,13 @@
+$(function(){
+	/*$(".gouwuche").on("mouseover",function(){
+		if($(".shoppingNum").text()==0){
+			$(".showCarNo").css("display","block");
+		}else{
+			$(".showCarHas").css("display","block");
+		}
+	});
+	$(".gouwuche").on("mouseout",function(){
+		$(".showCarNo").css("display","none");
+		$(".showCarHas").css("display","none");
+	})*/
+})

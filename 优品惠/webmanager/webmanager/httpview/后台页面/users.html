@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户管理</title>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery-3.1.0.min.js"></script>
+	</head>
+	<body>
+		
+		<nav class="navbar navbar-default navbar-fixed-top" >
+			<div class="container" id="logo">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand" style="padding: 0;">
+						<img src="img/logo.png" style="margin-top: 20px;"/>
+					</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navShow">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navBox" >
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../前端页面/index.html"><span class="glyphicon glyphicon-home"></span>优品惠</a></li>
+						<li><a href="index.html"><span class="glyphicon glyphicon-list"></span> 我的订单</a></li>
+						<li class="active"><a href="users.html"><span class="glyphicon glyphicon-fire"></span> 用户管理</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> 资金管理</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div id="side">
+			<div class="container container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<p class="text-success" id="weizhi">
+							<button class="btn btn-primary btn-xs" id="addGood" data-toggle="modal" data-target="#myModal" style="float: right;font-size: 14px;margin: 7px 10px;">新增用户</button>
+						</p>
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">
+												<span>&times;</span>
+											</button>
+											<h3 class="modal-title" style="text-align: center;">请输入你要添加的用户信息</h3>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<form role="form">
+												  	<div class="form-group col-lg-12">
+												    	<label for="userName">用户名</label>
+												    	<input type="text" class="form-control" id="userName" placeholder="请输入要添加的用户名"><p id="info" style="font-size: 14px;padding-left: 3px;"></p>
+												  	</div>
+												  	<div class="form-group col-lg-12">
+												    	<label for="userPwd">用户密码</label>
+												    	<input type="password" class="form-control" id="userPwd" placeholder="请输入要添加的用户密码">
+												  	</div>
+												</form>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button class="close" data-dismiss="modal" id="queding">确定</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						<table class="table-striped" id="content" border="1">
+							<thead>
+								<th>全选&nbsp;&nbsp;<input type="checkbox" /></th>
+								<th>用户名</th>
+								<th>用户密码</th>
+								<th>编辑</th>
+								<th>删除</th>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						<p class="page">
+							<a id="lastPage" href="#">&lt;上一页</a>
+							<a >当前页:<a id="pageNow">1</a></a>
+							<a id="nextPage" href="#">下一页&gt;</a>
+							<a>&nbsp;&nbsp;&nbsp;&nbsp;到第</a>
+							<input type="text" id="toPageIndex" value="1">
+							<a>&nbsp;&nbsp;页&nbsp;&nbsp;</a>
+							<a href="#" id="submit">确认</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script>
+			$(function(){
+				var nowPage=1;
+				var arrAllUser=[];
+				var type=0;
+				
+				$("#queding").click(function(){
+					var jsonData={
+						"username":$("#userName").val(),
+						"pwd":$("#userPwd").val()
+					};
+					arrAllUser.push(jsonData);
+					var dataStr=JSON.stringify(arrAllUser);
+					$.ajax({
+						type: "GET",
+						url: "http://localhost:8080/product/CreateUpdateProduct_get?id=00001&datajson="+dataStr,
+						success: function(data){
+						    alert("添加成功!");
+						    location.reload();
+						},
+						 error:function(){
+						   	alert("添加失败!");
+						}
+					});
+				});
+				
+				$("#lastPage").click(function(){
+					nowPage--;
+					if(nowPage<=0){
+						nowPage=1;
+					}else{
+						$("#pageNow").html(nowPage);
+						showData(nowPage,type);
+					}
+					return false;
+				});
+				$("#nextPage").click(function(){
+					nowPage++;
+					$("#pageNow").html(nowPage);
+					showData(nowPage,type);
+					return false;
+				});
+				$("#submit").click(function(){
+					nowPage=$("#toPageIndex").val();
+					if(nowPage>=1){
+						$("#pageNow").html(nowPage);
+						showData(nowPage,type);
+					}
+					return false;
+				});
+				
+				$("#content thead th input").click(function(){
+					if($(this).prop("checked")==true){
+						$("#content tbody td input").each(function(){
+							$(this).prop("checked",true);
+						});
+					}
+					else{
+						$("#content tbody td input").each(function(){
+							$(this).prop("checked",false);
+						});
+					}
+				});
+
+				ajaxUtil();
+				function ajaxUtil(){
+					$.ajax({
+						type: "GET",
+						url: "http://localhost:8080/product/GetProductById_get?id=00001",
+						success: function(data){
+							dataJson=JSON.parse(data);
+							arrAllUser=JSON.parse(dataJson.Data);
+							showData(nowPage,type);
+						},
+						error:function(){
+							alert("获取数据失败!");
+						}	 
+					});
+				}
+				
+				function showData(index,type){
+					$("#content tbody").html("");
+					if(5*(index-1)<=arrAllUser.length){
+						for(var i=5*(index-1);i<5*index;i++){
+							if(i<arrAllUser.length)
+								appendData(arrAllUser[i]);
+						}
+					}
+				}
+				
+				function appendData(strData){
+					var str="<tr><td><input type=\"checkbox\" /></td>";
+						str+="<td>"+strData.username+"</td>";
+						str+="<td>"+strData.pwd+"</td>"
+						str+="<td><a href=\"#\" class=\"glyphicon glyphicon-list-alt bianji\"></a></td>";
+						str+="<td><a href=\"#\" class=\"glyphicon glyphicon-trash shanchu\"></a></td></tr>";
+					$("tbody").append(str);
+					del();
+					bianji();
+				}
+				
+				function bianji(){
+					$(".bianji").each(function(){
+								$(this).click(function(){
+									var dom=$(this).parent().parent();
+									var dataName=$(this).parent().parent().children().eq(1).html();
+									var dataPwd=$(this).parent().parent().children().eq(2).html();
+									var str="<td><input type=\"checkbox\" /></td>";
+										str+="<td>"+dataName+"</td>";
+										str+="<td><input type=\"text\" value=\""+dataPwd+"\" /></td>";
+										str+="<td><a href=\"#\" class=\"bjqd\">确定</a></td>";
+										str+="<td><a href=\"#\" class=\"glyphicon glyphicon-trash shanchu\"></a></td>";
+									dom.html(str);
+									$(".bjqd").click(function(){
+										var newpwd=$(this).parent().parent().children().eq(2).children().val();
+											for(var i=0;i<arrAllUser.length;i++){
+												if(arrAllUser[i].username==dataName){
+													arrAllUser[i].pwd=newpwd;
+												}
+											}
+											var dataStr=JSON.stringify(arrAllUser);
+											$.ajax({
+											    type: "GET",
+											    url: "http://localhost:8080/product/CreateUpdateProduct_get?id=00001&datajson="+dataStr,
+											    success: function(data){
+											    	var newStr="<td><input type=\"checkbox\" /></td>";
+														newStr+="<td>"+dataName+"</td>";
+														newStr+="<td>"+newpwd+"</td>"
+														newStr+="<td><a href=\"#\" class=\"glyphicon glyphicon-list-alt bianji\"></a></td>";
+														newStr+="<td><a href=\"#\" class=\"glyphicon glyphicon-trash shanchu\"></a></td>";
+											    	dom.html(newStr);
+											    	bianji();
+											    },
+											    error:function(){
+											   		alert("修改失败!");
+											    }
+											});
+										
+									})
+								})
+							});
+				}
+				
+				function del(){
+					$(".shanchu").each(function(){
+						$(this).click(function(){
+							var result=confirm("是否确定删除？");
+							if(result){
+								var dataName=$(this).parent().parent().children().eq(1).html();
+								for(var i=0;i<arrAllUser.length;i++){
+									if(arrAllUser[i].username==dataName){
+										arrAllUser.splice(i,1);
+									}
+								}
+								var dataStr=JSON.stringify(arrAllUser);
+								$.ajax({
+									type: "GET",
+									url: "http://localhost:8080/product/CreateUpdateProduct_get?id=00001&datajson="+dataStr,
+									success: function(data){
+										alert("删除成功!");
+									},
+									error:function(){
+									alert("删除失败!");
+									}
+								});
+								location.reload();
+							}
+						})
+					});
+				}
+			})
+		</script>
+		
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
