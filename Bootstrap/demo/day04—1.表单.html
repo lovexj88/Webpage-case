@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maxium-scale=1, user-scalable=no">
+		<title>表单</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<style>
+			body{padding: 20px;}
+		</style>
+	</head>
+	<body>
+		
+		<!--1、基本格式-->
+		<form>
+			<div class="form-group">
+				<label>电子邮件</label>
+				<input type="email" class="form-control" placeholder="请输入你的电子邮件" />
+			</div>
+			<div class="form-group">
+				<label>密码</label>
+				<input type="password" class="form-control" placeholder="请输入你的密码" />
+			</div>
+		</form>
+		
+		<!--2、内联表单-->
+		<form class="form-inline">
+			<div class="form-group">
+				<label>电子邮件</label>
+				<input type="email" class="form-control" placeholder="请输入你的电子邮件" />
+			</div>
+		</form>
+		<br />
+		
+		<!--3、表单合组（前后增加片段input-group-addon）-->
+		<form class="form-inline">
+			<div class="input-group">
+				<div class="input-group-addon">￥</div>
+				<input type="text" class="form-control">
+				<div class="input-group-addon">.00</div>
+			</div>
+		</form>
+		<br />
+		
+		<!--4、水平排列-->
+		<form class="form-horizontal">
+			<div class="form-group">
+			<label class="col-sm-2 control-label">电子邮件</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" placeholder="请输入您的电子邮件">
+				</div>
+			</div>
+		</form>
+		
+		<!--5、复选框-->
+			<!--默认设置复选框-->
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" />体育
+				</label>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" />音乐
+				</label>
+			</div>
+			<!--设置禁用的复选框-->
+			<div class="checkbox disabled">
+				<label>
+					<input type="checkbox" disabled/>体育
+				</label>
+			</div>
+			<!--设置内联一行显示的复选框-->
+			<div class="checkbox checkbox-inline">
+				<label>
+					<input type="checkbox" />音乐
+				</label>
+			</div>
+			<div class="checkbox checkbox-inline">
+				<label>
+					<input type="checkbox" />体育
+				</label>
+			</div>
+			
+		<!--6、单选框-->
+		<div class="radio ">
+			<label>
+				<input type="radio" name="sex" />男
+			</label>
+		</div>
+		
+		<!--7、下拉列表-->
+		<select class="form-control">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		
+		<!--8、校验状态-->
+		<!--label 标签同步相应状态-->
+			<!--1.has-error;2.has-success;3.has-warning;-->
+			<div class="form-group has-success"></div>
+			<label class="control-label">Input with success</label>
+		
+		<!--9、设置额外的图标-->
+		<div class="form-group has-feedback">
+			<label>电子邮件</label>
+			<input type="email" class="form-control">
+			<!--成功状态 -->
+			<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+		</div>
+		<div class="form-group has-feedback">
+			<label>电子邮件</label>
+			<input type="email" class="form-control">
+			<!--警告状态 -->
+			<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+		</div>
+		<div class="form-group has-feedback">
+			<label>电子邮件</label>
+			<input type="email" class="form-control">
+			<!--错误状态 -->
+			<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+		</div>
+		
+		<!--10、控制尺寸-->
+		<input type="text" class="form-control input-lg" value="大输入框">
+		<br />
+		<input type="text" class="form-control" value="默认">
+		<br />
+		<input type="text" class="form-control input-sm" value="小输入框">
+			
+	</body>
+</html>

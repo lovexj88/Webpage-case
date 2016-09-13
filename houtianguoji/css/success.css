@@ -1,0 +1,11 @@
+.bannerBox{height: 201px;background:url(../img/gezi.png);}
+.banner{width: 1140px;height: 201px;overflow: hidden;margin: 0 auto;}
+.bannertips{font-size: 24px;color: #feffff;font-weight: bold;margin-top: 55px;}
+.bannertips span{font-size: 18px;color: #feb3b0;font-weight:normal;}
+.weizi{margin-top: 24px;font-size: 12px;color: #feb3b0;}
+.weizi a{color: #feffff;font-weight: bold;}
+
+
+.pic{width: 1170px;margin: 0 auto;}
+.pic li{float: left;margin:0 30px 30px 0;}
+.footer{clear: both;}

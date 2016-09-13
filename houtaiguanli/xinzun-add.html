@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="description">
+<meta content="" name="author">
+<link href="../../favicon.ico" rel="icon">
+<title>匠心筑梦</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" /> 
+<meta name="robots" content="all" />
+<link type="text/css" rel="stylesheet" href="css/global.css"> 
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+ $('.son_ul').hide(); //初始ul隐藏
+ $('.select_box span').toggle(function(){ //鼠标移动函数
+  $(this).parent().find('ul.son_ul').slideDown();  //找到ul.son_ul显示
+  $(this).parent().find('li').hover(function(){$(this).addClass('hover')},function(){$(this).removeClass('hover')}); //li的hover效果
+  $(this).parent().hover(function(){},
+	 function(){
+		 $(this).parent().find("ul.son_ul").slideUp(); 
+		 }
+	 );
+  },function(){}
+  );
+ $('ul.son_ul li').click(function(){
+  $(this).parents('li').find('span').html($(this).html());
+  $(this).parents('li').find('ul').slideUp();
+  });
+}
+ );
+</script>
+
+</head>
+
+<body style="background:#fff;height:1000px;">
+<link type="text/css" rel="stylesheet" href="css/add.css">
+<div class="add-title">
+    <dl>
+    	<dt>标题:</dt>
+        <dd><input type="text"></dd>
+    </dl>
+   <dl class="add-select">
+    	<dt>栏目:</dt>
+        <dd>
+        	<ul id="main_box">
+              <li class="select_box">
+                <span>请选择...</span>
+                <ul class="son_ul">
+                  <li>选项一</li>
+                  <li>选项二</li>
+                  <li>选项三</li>
+                  <li>选项四</li>
+                  <li>选项五</li>
+                </ul>
+              </li>
+            </ul>
+        </dd>
+    </dl>
+    <dl>
+    	<dt>内容:</dt>
+        <dd><textarea></textarea></dd>
+    </dl>
+    <dl>
+    	<dt>图片上传:</dt>
+        <dd><input type="text"><a href="#">上传</a></dd>
+    </dl>
+    <button class="add-but">提交</button>
+</div>
+</body>
+</html>

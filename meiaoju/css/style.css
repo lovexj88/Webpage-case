@@ -1,0 +1,79 @@
+@charset "utf-8";
+.bannerBottom{width:400px;height: 88px;margin-top: 172px;margin-left: 20px;}
+.bannerTip{font-size: 30px;font-family:"黑体";color: #fff;padding-bottom: 13px;}
+.bannerIntro{width: 308px;border-top: 1px solid #5eab1f;padding-top: 8px;}
+.bannerIntro span{color: #fff;font-family:arial;margin-top: 172px;}
+
+
+.nowBox{height: 858px;background: #efefef;}
+.now{width: 1072px;margin: 0 auto;padding: 50px 0 16px;background: #efefef;}
+.now1,.now2{text-align: center;}
+.now1{font-size: 30px;color:#666666;}
+.now2{font-size: 14px;font-weight: bold;color:#666666;padding:3px 0 20px;background: url(../img/new_border.png) no-repeat center bottom;}
+.nowPic{margin-top: 30px;}
+.nowPic p{margin: 20px 0 0 10px;}
+.nowPic dl{width: 343px;height: 564px;margin-bottom:30px;float: left;background:#fff;position: relative;overflow: hidden;}
+.nowPic dl img{width: 100%;}
+.nowPic1{font-size: 33px;color: #fc6808;text-align: center;font-weight: bold;}
+.nowPic2{font-size: 12px;color: #fc6808;text-align: center;}
+.nowPic3{font-size: 18px;color: #4a4a4a;text-align: left;font-weight: bold;}
+.nowPic4{color:#fc6808;font-size: 13px;}
+.nowPic4 span{color:#fc6808;font-size: 13px;}
+.nowPic5{color:#666666;font-size: 13px;}
+.nowPic5 span{color:#58b718;font-size: 13px;}
+.nowPic6{color:#666666;font-size: 13px;}
+.nowPic7{color:#666666;font-size: 13px;}
+.greenPic{text-align: center;margin-bottom: 40px;}
+.nowPic dl .greenPic a{font-size: 10px;color: #51ac14;}
+.nowPic dl .greenPic img{width: 80%;}
+.nowPic .btn{width: 137px;padding-top: 10px;margin:5px auto 0;text-align: center;background: url(../img/nowBtn.png) no-repeat;height: 26px;}
+.btn a{font-size: 16px;color: #fbfbfb;}
+.hasMargin{margin-right: 21px;}
+.lookMore{width: 240px;background: url(../img/lookMore.png) no-repeat;height: 55px;text-align: center;padding-top: 16px;clear: both;margin: 0 auto;}
+.lookMore a{font-size: 17px;color: #fffefe;}
+.nowPic dl dd{overflow: hidden;}
+.nowPic dl .souqin1{width:154px;height: 120px;position: absolute;top:309px;left: 142px;display: block;}
+.nowPic dl .souqin2{width:154px;height: 120px;position: absolute;top:452px;left: 200px;display: block;}
+.nowPic dl .souqin3{width:154px;height: 120px;position: absolute;top:452px;left: 200px;display: block;}
+
+
+.touzi{width: 1072px;height:445px;margin: 0 auto;overflow: hidden;}
+.touzi .now1{color: #000;margin-top: 60px;}
+.touzi dl{width: 513px;height: 196px;float: left;margin-top: 40px;}
+.touzi dt,.touzi dd{float: left;}
+.touzi dd{padding-left: 55px;}
+.touziLeft{border-right: 1px dashed #e5e5e5;}
+.touziLeft1{font-size: 20px;color: #fd8130;font-weight: bold;margin-top: 90px;}
+.touziLeft2{font-size: 32px;color: #fc6808;font-weight: bold;}
+.touziLeft2 span{font-size: 19px;}
+.touziRight .touziLeft1{color:#5db224}
+.touziRight .touziLeft2{color:#51ac14}
+.touziRight dt{padding: 30px 0 0 30px;}
+
+
+.haiwaiBox{background: #efefef;}
+.haiwai{width: 1072px;margin: 0 auto;padding: 50px 0 16px;background: #efefef;}
+.haiwai .nowPic{margin-top: 30px;}
+
+
+.touxiangBox{height: 463px;background: #fff;}
+.touxiang{width: 1072px;margin: 0 auto;overflow: hidden;}
+.touxiangPic dl{float: left;width: 268px;height: 254px;}
+.touxiangPic dt{height: 180px;padding-top: 35px;padding-left: 73px;position: relative;}
+.touxiangPic dt span{display: block;width: 135px;height: 135px;background: url(../img/touxiang.png) no-repeat;position: absolute;top:41px;left: 78px;}
+.touxiangPic2 dt span{background: url(../img/touxiang2.png) no-repeat;}
+.touxiangPic3 dt span{background: url(../img/touxiang3.png) no-repeat;}
+.touxiangPic4 dt span{background: url(../img/touxiang4.png) no-repeat;}
+.touxiang .now1{margin-top: 65px;}
+.touxiangPic dd p{color:#666;font-size: 18px;text-align: center;}
+.hengtiao{text-align: center;}
+.hengtiao img{margin: 15px 3px 0;}
+
+
+
+.zhuceBox{height: 216px;background: #fff;}
+.zhuce{width: 1072px;height: 216px;margin: 0 auto;overflow: hidden;}
+.zhuceTip{font-size: 30px;line-height: 84px;color: #333;text-align: center;margin-top: 23px;}
+.lijizhuce{display: block;color: #fff;width: 233px;height: 53px;background: url(../img/yuanjiao.png) no-repeat;margin: 0 auto;line-height: 54px;font-size: 18px;text-align: center;}
+
+

@@ -1,0 +1,49 @@
+body,li,ul,dl,dt,dd,h1,h3,p,input,img{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+body{font-family: "微软雅黑";}
+img{border: none;}
+
+
+.headerBox{height: 41px;border-top: 2px solid #0582bc;border-bottom: 1px solid #bcbcbc;}
+.header{width: 1002px;height: 41px;margin: 0 auto;position: relative;}
+.headerLeft li{float: left;padding: 0 15px;height: 41px;border-left: 1px solid #bcbcbc;}
+.headerLeft li a{line-height: 40px;font-size: 12px;color: #383838;}
+.headerLeft .tele a{padding-left: 15px;color: #ff4e00;background: url(../img/tubiao.png) no-repeat -2px -14px;}
+.headerLeft .tele{border-right: 1px solid #bcbcbc;}
+.shaoer{display: block;width: 84px;height: 43px;background: #ff6600;color: #fff;line-height: 42px;font-size: 12px;text-align: center;position: absolute;bottom: -1px;right: 56px;}
+
+
+.nav{width: 1002px;height: 76px;margin: 0 auto;overflow: hidden;}
+.logo{width: 124px;height: 44px;margin-top: 16px;float: left;}
+.navCenter{float: left;margin-left: 53px;}
+.navCenter li{float: left;line-height: 76px;font-size: 14px;padding: 0 23px;}
+.navCenter li a{color: #252525;}
+.navCenter li .free{color: #be0000;}
+.navCenter li .index{color: #2895d0;}
+.navCenter li a:hover{border-bottom: 2px solid #0e62a7;display: block;height: 68px;}
+
+
+.banner{height: 452px;}
+.banner img{display: block;width: 100%;height: 452px;}
+
+
+.aboutUsBox{height: 263px;background: #033c55;}
+.aboutUs{width: 1002px;height: 217px;margin: 0 auto;padding-top: 46px;}
+.aboutUs dl{float: left;width: 215px;margin-right: 18px;}
+.aboutUs dt{height: 40px;line-height: 40px;color: #fff;line-height: 40px;background: url(../img/usBg.png) no-repeat right center;}
+.usIntro{line-height: 22px;font-size: 12px;color: #618c9f;}
+.tubiao{height: 36px;background:url(../img/tubiao.png) no-repeat -3px -1017px;}
+.bug li{width: 207px;height: 38px;line-height: 38px;padding-left: 8px;border-top:1px solid #03425e;background: url(../img/tubiao.png) no-repeat -193px -788px;}
+.bug li a{color: #618c9f;font-size: 12px;}
+.biaoqian a{font-size: 12px;color: #80a6b7;line-height: 30px;text-align: center;float: left;width: 80px;height: 30px;background: url(../img/biaoqianBg.png) no-repeat;margin: 0 5px 5px 0;}
+.lianxi li{padding-left:25px;height: 30px;background: url(../img/tubiao.png) no-repeat -179px -561px;}
+.lianxi li a{font-size: 12px;color: #80a6b7;}
+
+
+.footer{width: 1002px;height: 204px;margin: 0 auto;overflow: hidden;}
+.href{padding-left: 145px;margin-top: 30px;height: 20px;}
+.href a{float: left;margin-left: 17px;color: #515151;font-size: 12px;}
+.copy{color: #515151;font-size: 12px;line-height: 60px;text-align: center;}
+.footerPic{text-align: center;}
+.footerPic img{margin:0 20px;}

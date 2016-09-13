@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>列表组组件</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<!--列表组组件用于显示一组列表的组件。-->
+			<!--基本实例-->
+			<ul class="list-group">
+				<li class="list-group-item">1.这是起始</li>
+				<li class="list-group-item">2.这是第二条数据</li>
+				<li class="list-group-item">3.这是第三排信息</li>
+				<li class="list-group-item">4.这是末尾</li>
+			</ul>
+			
+			<!--列表项带徽章-->
+			<ul class="list-group">
+				<li class="list-group-item">1.这是起始<span class="badge">10</span></li>
+				<li class="list-group-item">2.这是第二条数据</li>
+				<li class="list-group-item">3.这是第三排信息</li>
+				<li class="list-group-item">4.这是末尾</li>
+			</ul>
+			
+			<!--链接式列表和首选项-->
+			<div class="list-group">
+				<a href="#" class="list-group-item active">1.这是起始<span class="badge">10</span></a>
+				<a href="#" class="list-group-item">2.这是第二条数据</a>
+				<a href="#" class="list-group-item">3.这是第三排信息</a>
+				<a href="#" class="list-group-item">4.这是末尾</a>
+			</div>
+			
+			<!--按钮式列表和禁用-->
+			<div class="list-group">
+				<button href="#" class="list-group-item active">1.这是起始<span class="badge">10</span></button>
+				<button href="#" class="list-group-item disabled">2.这是第二条数据</button>
+				<button href="#" class="list-group-item">3.这是第三排信息</button>
+				<button href="#" class="list-group-item">4.这是末尾</button>
+			</div>
+			
+			<!--情景类-->
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-success">1.这是起始</li>
+				<li class="list-group-item list-group-item-info">2.这是第二条数据</li>
+				<li class="list-group-item list-group-item-warning">3.这是第三排信息</li>
+				<li class="list-group-item list-group-item-danger">4.这是末尾</li>
+			</ul>
+			
+			<!--定制内容-->
+			<div class="list-group">
+				<a href="#" class="list-group-item">
+					<h4>内容标题</h4>
+					<p class="list-group-item-text">这里是相关内容</p>
+				</a>
+				<a href="#" class="list-group-item">
+					<h4>内容标题</h4>
+					<p class="list-group-item-text">这里是相关内容</p>
+				</a>
+				<a href="#" class="list-group-item">
+					<h4>内容标题</h4>
+					<p class="list-group-item-text">这里是相关内容</p>
+				</a>
+				<a href="#" class="list-group-item">
+					<h4>内容标题</h4>
+					<p class="list-group-item-text">这里是相关内容</p>
+				</a>
+			</div>
+			
+		
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-3.1.0.min.js"></script>
+	</body>
+</html>

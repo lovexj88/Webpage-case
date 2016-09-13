@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轮播</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<style>
+			#myCarousel a{font-size: 50px;line-height: 260px;}
+		</style>
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!--轮播插件就是将几张同等大小的大图，按照顺序依次播放-->
+		
+			<!--基本实例-->
+			<div id="myCarousel" class="carousel slide" style="width: 400px;margin: 30px auto;">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+					<li data-target="#myCarousel" data-slide-to="4"></li>
+					<li data-target="#myCarousel" data-slide-to="5"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/1.jpg" alt="第一张图片"/>
+					</div>
+					<div class="item">
+						<img src="img/2.jpg" alt="第二张图片"/>
+					</div>
+					<div class="item">
+						<img src="img/3.jpg" alt="第三张图片"/>
+					</div>
+					<div class="item">
+						<img src="img/4.jpg" alt="第四张图片"/>
+					</div>
+					<div class="item">
+						<img src="img/5.jpg" alt="第五张图片"/>
+					</div>
+					<div class="item">
+						<img src="img/6.jpg" alt="第六张图片"/>
+					</div>
+				</div>
+				<a href="#myCarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a> 
+				<a href="#myCarousel" data-slide="next" class="carousel-control right">&rsaquo;</a> 
+			</div>
+			
+			<script>
+				$('#myCarousel').carousel({
+					//设置自动播放/2 秒
+					interval : 2000,
+					//设置暂停按钮的事件
+					pause : 'hover',
+					//是否循环
+					wrap : true,
+				});
+			</script>
+			
+	</body>
+</html>

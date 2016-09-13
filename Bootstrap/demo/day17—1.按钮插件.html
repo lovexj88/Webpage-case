@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>按钮插件</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<style>
+			body{padding: 30px;}
+		</style>
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!--可以通过按钮插件创建不同状态的按钮。-->
+		
+			<!--单个切换-->
+			<button class="btn btn-primary" data-toggle="buttons" autocomplete="off">
+				单个切换
+			</button>
+			<br /><br />
+			<!--在 Firefox 多次页面加载时，按钮可能保持表单的禁用或选择状态。
+			解决方案是：添加 autocomplete="off"-->
+			
+			<!--单选按钮-->
+			<div class="btn-group" data-toggle="buttons">
+				<label for="" class="btn btn-primary active">
+					<input type="radio" name="sex" autocomplete="off" checked />男
+				</label>
+				<label for="" class="btn btn-primary">
+					<input type="radio" name="sex" autocomplete="off" checked />女
+				</label>
+			</div>
+			<br /><br />
+			
+			<!--复选按钮-->
+			<div class="btn-group" data-toggle="buttons">
+				<label for="" class="btn btn-primary active">
+					<input type="checkbox" name="hobby" autocomplete="off" />音乐
+				</label>
+				<label for="" class="btn btn-primary">
+					<input type="checkbox" name="hobby" autocomplete="off" />体育
+				</label>
+				<label for="" class="btn btn-primary">
+					<input type="checkbox" name="hobby" autocomplete="off" />美术
+				</label>
+				<label for="" class="btn btn-primary">
+					<input type="checkbox" name="hobby" autocomplete="off" />唱歌
+				</label>
+				<label for="" class="btn btn-primary">
+					<input type="checkbox" name="hobby" autocomplete="off" />跳舞
+				</label>
+			</div>
+			<br /><br />
+			
+			<!--加载状态-->
+			<button id="myButton" class="btn btn-primary" autocomplete="off" type="button" data-loading-text="Loading...">
+				加载状态
+			</button>
+			
+			<p style="padding-top: 30px;">
+				<img src="img/button方法.png" />
+			</p>
+			
+			<script>
+				$("#myButton").on("click",function(){
+					var $btn=$(this).button("loading");
+					setTimeout(function(){
+						$btn.button("reset");
+					},2000);
+				})
+			</script>
+			
+			
+			
+	</body>
+</html>

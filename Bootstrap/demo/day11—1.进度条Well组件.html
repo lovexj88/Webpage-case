@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>进度条Well组件</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="js/jquery-3.1.0.min.js"></script>
+	</head>
+	<body>
+		<!--1、Well组件-->
+		<!--这个组件可以实现简单的嵌入效果。-->
+			<!--嵌入效果-->
+			<div class="well">
+				Bootstrap嵌入
+			</div>
+			
+			<!--尺寸（还有两种:lg和sm）-->
+			<div class="well well-lg">
+				Bootstrap嵌入
+			</div>
+			
+		<!--2、进度条组件-->
+		<!--进度条组件为当前工作流程或动作提供时时反馈。-->
+			<!--基本进度条-->
+			<div class="progress">
+				<div class="progress-bar" style="width: 60%;">60%</div>
+			</div>
+			
+			<!--最低值进度条-->
+			<div class="progress">
+				<div class="progress-bar" style="min-width: 30%;">0%</div>
+			</div>
+			
+			<!--结合情景的进度条-->
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" style="min-width: 30%;width: 60%;">60%</div>
+			</div>
+		
+			<!--条纹状（兼容性不好）-->
+			<div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped" style="min-width: 30%;width: 60%;">60%</div>
+			</div>
+			
+			<!--动画条纹效果-->
+			<div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped active" style="min-width: 30%;width: 60%;">60%</div>
+			</div>
+			
+			<!--堆叠效果-->
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger" style="width: 10%;">10%</div>
+				<div class="progress-bar progress-bar-success" style="width: 20%;">20%</div>
+				<div class="progress-bar progress-bar-warning" style="width: 35%">35%</div>
+			</div>
+		
+		
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

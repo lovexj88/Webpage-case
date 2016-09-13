@@ -1,0 +1,18 @@
+.about{width: 1140px;height: 230px;margin: 0 auto;}
+.about li{float: left;}
+.aboutPic{width: 354px;height: 230px;}
+.intro{width: 736px;height: 230px;margin-left: 50px;}
+.intro1{font-size: 15px;line-height: 26px;color: #333331;}
+.intro2{font-size: 12px;line-height: 30px;margin-top: 20px;color: #656567;border-bottom:1px solid #eeeeee;padding-bottom: 28px; }
+
+
+.enter{width: 1140px;height: 404px;margin: 0 auto;border-bottom: 1px solid #eeeeee;}
+.enterTop{text-align: center;color: #333333;font-size: 14px;line-height: 80px;}
+.enter dl{width: 339px;float: left;}
+.enter dd{color: #676566;font-size: 12px;line-height: 78px;text-align: center;}
+.enterhasMarign{margin:0 61px;}
+
+
+.aboutPicBox{width: 1140px;margin: 0 auto;}
+.aboutPicBox li{float: left;margin-bottom: 48px;}
+.footer{clear: both;}

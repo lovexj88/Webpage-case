@@ -1,0 +1,108 @@
+body,h1,h2,h3,ul,li,dl,dt,dd,img,input,p,img{margin: 0;padding:0;}
+body{font-family: "微软雅黑";}
+img{border: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+.headerBox{height: 36px;background: #ecf0f1;}
+.header{width:1080px;height: 36px;background: #ecf0f1;margin: 0 auto;}
+.headerLeft{width:222px;float: left;}
+.headerLeft span{font-size: 11px;color: #7a7b7d;line-height: 36px;}
+.headerRight{width: 134px;float: right;height: 24px;padding-top: 12px;}
+.headerRight li{width:66px;height: 12px;line-height: 12px;float: left;text-align: center;}
+.headerRight li a{color: #77787a;font-size: 11px;}
+.hasBorder{border-left: 1px solid #77787a;}
+
+
+.logo{width:1080px;height: 90px;margin: 0 auto;padding-top: 20px;}
+.logo div{float: left;}
+.logo1{height: 72px;width:80px;}
+.logo2{width:254px;height: 72px;margin: 0 280px 0 20px;}
+.logoName{font-size: 31px;line-height: 48px;color: #2a7fb6;font-weight: bold;}
+.logoEnglish{font-size: 13px;color: #c1c2c4;font-family:georgia}
+.logo3{width:296px;height:72px;}
+.logo3 img{margin:11px 26px 0}
+.logo3 #noMargin{margin-right: 0;}
+.logo4{width: 130px;height: 72px;padding-left: 10px;margin-left: 8px;}
+.logo4Font14{font-size: 14px;line-height: 22px;color: #777777;margin-top: 11px;}
+.logoTele a{font-size: 18px;line-height: 24px;color: #e8503b;}
+
+
+.navBox{height: 50px;background: #3598db;}
+.nav{width: 1080px;height: 50px;margin: 0 auto;background: #3598db;}
+.nav li{width: 136px;height: 50px;float: left;font-size: 12px;text-align: center;}
+.nav #navFirst{background:#2a80b9 ;width: 154px;}
+.nav li a{line-height: 50px;color: #fffff1;}
+
+
+.banner{height: 400px;}
+.banner img{width: 100%;height: 400px;}
+
+
+.gonggao{width: 1058px;height: 32px;border: 1px solid #d6d6d6;margin: 30px auto 28px;padding-left: 20px;padding-top: 16px;}
+.gonggaoLeft{width: 90px;float:left}
+.gonggaoLeft img{float: left;}
+.gonggaoLeft span{font-size: 12px;color: #eb4835;float: left;margin-left: 12px;}
+.gonggaoRight {width: 967px;float: right;}
+.gonggaoRight li{float: left;font-size: 10px;text-align: center;background: url(../img/gonggaoLi.jpg) no-repeat left center;padding: 0 28px 0 16px;}
+.gonggaoRight li a{color: #5e6254;}
+
+
+.shoutcutBox{height: 400px;background:#f8f8f8;overflow: hidden;}
+.shortcut{width: 1080px;height: 334px;margin: 36px auto 0;}
+.shortcut dl{float: left;}
+.shortcut dt{height: 52px;}
+.shotcutLeft{width:306px;height: 334px;}
+.shotcutLeft span{float: left;font-size: 9px;color: #b8b8b8;line-height: 14px;}
+.shortcut .tip{height: 27px;width: 61px;border-bottom: 2px solid #3697de;}
+.shortcut .tip a{color: #2e2e2e;font-weight: bold;font-size: 14px;}
+.shotcutCenter{width:348px;height:334px;margin: 0 20px;}
+.shotcutCenter dt span{float: left;font-size: 9px;color: #b8b8b8;line-height: 14px;}
+.shotcutCenterDt1{float: left;}
+.shotcutCenterDt2{float: right;width: 88px;height: 32px;text-align: center;border: 1px solid #f1f1f1;}
+.shotcutCenterDt2 a{font-size: 9px;line-height: 32px;color: #b7b7b7;}
+.shotcutCenter dd{padding:15px 20px 0 21px;height: 265px;border: 1px solid #f1f1f1;background: #fff;}
+.shotcutCenter dd li{float: left;width:305px;height: 40px;font-size: 10px;border-bottom:1px dashed #cacaca;line-height: 40px;}
+.shotcutCenter dd li a{color: #5e5e5e;float: left;}
+.shotcutCenter dd li span{color: #606060;float: right;}
+
+
+.product{width: 1080px;height: 324px;margin: 34px auto 0;}
+.product dt{height: 57px;}
+.product .tip{height: 27px;width: 61px;border-bottom: 2px solid #3697de;}
+.product .tip a{color: #2e2e2e;font-weight: bold;font-size: 14px;}
+.product span{float: left;font-size: 9px;color: #b8b8b8;line-height: 14px;}
+.product img{border: 1px solid #e0e0e0;margin-right: 30px;}
+.product #productNoMargin{margin: 0;}
+
+
+.videoDD{height: 236px;width:382px;border: 1px solid #f1f1f1;background: url(../img/book.jpg) no-repeat right top;}
+.videoDD ul{width: 225px;height: 174px;padding-left: 20px;}
+.videoDD li{height: 53px;margin-top: 19px;padding-left: 32px;}
+.videoDD1{background: url(../img/kefu_03.jpg) no-repeat left top;}
+.videoDD2{background: url(../img/kefu_06.jpg) no-repeat left top;}
+.videoDD3{background: url(../img/kefu_08.jpg) no-repeat left top;}
+.videoDDFont12{font-size: 12px;color: #999;}
+.videoDDFont14 a{font-size: 14px;line-height:34px;color: #5d5d5d;}
+.videoDDFont11 a{font-size: 11px;line-height: 36px;color: #5f5f5f;}
+
+
+.href{width: 1080px; height: 72px;margin: 30px auto 0;}
+.href a{float: left;}
+.href p{width:1013px ;height: 72px;float: left;padding-left: 23px;border: 1px solid #d8d8d8;border-left: 0;}
+.href p a{font-size: 12px;color: #606060;line-height: 72px;margin: 0 16px;}
+
+
+.footBox{height: 50px;background: #34495e;margin-top: 30px;}
+.foot{width: 1080px; height: 50px;background: #34495e;margin:0 auto;}
+.foot ul{padding:20px 0 0 40px;}
+.foot li{height: 13px;width: 136px;float: left;font-size: 11px;line-height: 12px;text-align: center;border-left: 1px solid #abb9ba;border-right: 1px solid #657181;}
+.foot li a{color:#bcc4c7;}
+.foot #noBorderRight{border-right: 0;}
+.foot #noBorderLeft{border-left: 0;}
+
+
+.copyBox{height: 83px;background: #2d3e50;}
+.copy{width: 997px; height: 63px;background: #2d3e50;margin: 0 auto;padding: 20px 0 0 83px;}
+.copy p{font-size: 11px;color: #f4f4f6;line-height: 22px;}
+

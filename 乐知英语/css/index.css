@@ -1,0 +1,29 @@
+
+.picBox{background: #f4f4f4;padding-bottom: 24px;}
+.pic{width: 1110px;margin: 0 auto;}
+.picTop{height: 122px;text-align: center;padding-top: 18px;}
+.picTop .tip{font-size: 28px;line-height: 76px;color: #333;}
+.picTop .intro{font-size: 14px;color: #333;}
+.picCenter dl{float: left;width: 260px;height: 304px;margin: 0 55px;}
+.picCenter dd{font-size: 15px;color: #333;line-height: 54px;text-align: center;}
+.picBottom{background: url(../img/picBg.png) no-repeat left center;width: 1002px;height: 52px;clear: both;margin: 0 auto;}
+.more{display: block;width: 52px;height: 52px;margin: 0 auto;background: url(../img/tubiao.png) no-repeat -1px -322px;font-size: 12px;color: #fff;line-height: 52px;text-align: center;}
+
+
+.data{width: 1002px;margin: 0 auto;padding-bottom: 100px;}
+.data .tip{height: 102px;font-size: 34px;color: #333;line-height: 90px;text-align: center;background: url(../img/pBg.png) no-repeat center bottom;}
+.dataIntro{height: 230px;}
+.dataIntro dl{width: 334px;float: left;padding-top: 18px;}
+.dataIntro dt{float: left;width: 50px;background: url(../img/tubiao.png) no-repeat -2px -1164px;width: 52px;height: 36px;}
+.dataIntro dd{width: 234px;float: left;height: 98px;border-bottom: 2px solid #ff6600;}
+.num{font-size: 34px;color: #333;}
+.numIntro{font-size: 18px;color: #333;line-height: 52px;}
+.pingjia{font-size: 18px;font-weight: bold;color: #333;height: 24px;background: url(../img/pingjiaBg.png) no-repeat right center;}
+.pingjia1{height: 102px;padding: 30px 0 0 44px;}
+.pingjia1 dt{background: url(../img/tubiao.png) no-repeat -2px -472px;float: left;width: 64px;height: 102px;}
+.pingjia1 dd{width: 824px;height: 74px;background: url(../img/yuanjianBg.png) no-repeat;float: left;padding:0 50px 0 20px;}
+.name{line-height: 40px;height: 40px;}
+.name a{float: left;font-size: 14px;font-weight: bold;}
+.name span{float: right;font-size: 12px;color: #838383;}
+.says{color: #1f1f1f;font-size: 14px;}
+

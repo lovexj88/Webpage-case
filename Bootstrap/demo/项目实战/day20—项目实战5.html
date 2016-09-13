@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>项目实战5</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand" id="logoBox">
+						<img src="img/logo.png" id="logo" />
+					</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navShow">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navShow">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-list"></span> 资讯</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-fire"></span> 案例</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="jumbotron zixunInfo">
+			<div class="container">
+				<hgroup>
+					<h1>资讯</h1>
+					<h4>企业内训的最新动态、资源等...</h4>
+				</hgroup>
+			</div>
+		</div>
+		
+		<div class="information">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8  info-left">
+						<div class="container-fluid" style="padding:0;">
+							<div class="row  info-content">
+								<div class="col-md-5  col-sm-5 col-xs-5">
+									<img src="img/info1.jpg" class="img-responsive" alt="" />
+								</div>
+								<div class="col-md-7">
+									<h4>广电总局发布 TVOS2.0 华为阿里参与研发</h4>
+									<p  class="hidden-xs">TVOS2.0 是在 TVOS1.0 与华
+									为 MediaOS 及阿里巴巴 YunOS 融合的基础上，打造的新一代智能电视操作系统。华为主要
+									承担开发工作，内置的电视购物商城由阿里方面负责。</p>
+									<p>admin 15 / 10 / 11</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<div class="container">
+				<p>企业培训  | 合作事宜  | 版权投诉</p>
+				<p>苏 ICP 备 12345678. © 2009-2016 瓢城企训网. Powered by Bootstrap.</p>
+			</div>
+		</div>
+		
+		
+		
+		<script>
+			$(function(){
+				//设置自动播放
+				$('#myCarousel').carousel({
+					//设置自动播放/2 秒
+					interval : 2000,
+					//设置暂停按钮的事件
+					pause : 'hover',
+					//是否循环
+					wrap : true,
+				});
+				
+				//设置tab里面的文字垂直居中
+				//获取偏移量
+				var tabOffset1=($(".tabPic").eq(0).height() - $(".text").eq(0).height()) / 2;
+				var tabOffset2=($(".tabPic").eq(1).height() - $(".text").eq(1).height()) / 2;
+				
+				$(".text").eq(0).css("margin-top", tabOffset1+"px");
+				$(".text").eq(1).css('margin-top', tabOffset2+"px");
+				
+				$(window).resize(function() {
+					tabOffset1=($(".tabPic").eq(0).height() - $(".text").eq(0).height()) / 2;
+					tabOffset2=($(".tabPic").eq(1).height() - $(".text").eq(1).height()) / 2;
+					$('.text').eq(0).css("margin-top", tabOffset1+"px");
+					$('.text').eq(1).css("margin-top", tabOffset2+"px");
+				});		
+			})
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+.table1 {margin:1% 2%}
+.table1 a{ border:1px solid #dcdddd; border-radius:3px;width:60px;height:30px; line-height:30px;margin-right:15px; display:inline-block; color:#008eff; font-size:12px;}
+.table1 a img{margin:0 10px; vertical-align:middle;}
+.table2{ border-collapse:collapse; border:1px solid #dcdddd; color:#666;margin-left:2%; background:#dcdddd}
+.table2 thead{ background:#efefef; font-weight:bold}
+.table2 tbody{ font-size:12px}
+.table2 tr{ border-bottom:1px solid #dcdddd; width:100%;height:35px; line-height:35px; background:#fff }
+.table2 td{border-right:1px solid #dcdddd;border-bottom:1px solid #dcdddd;padding-left:10px;}
+.table3 td{ border:none}

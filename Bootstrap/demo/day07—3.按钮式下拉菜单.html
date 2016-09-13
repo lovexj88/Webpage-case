@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>按钮式下拉菜单</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<style>
+			body{padding: 20px;}
+		</style>
+	</head>
+	<body>
+		<!--群组按钮下拉菜单-->
+		<div class="dropdown">
+		  <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+		    Dropdown
+		    <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu">
+		    <li><a href="#">Action</a></li>
+		    <li><a href="#">Another action</a></li>
+		    <li><a href="#">Something else here</a></li>
+		    <li><a href="#">Separated link</a></li>
+		  </ul>
+		</div>
+		<br /><br />
+		
+		<!--分列式按钮下拉菜单-->
+		<div class="btn-group dropdown">
+			<button class="btn btn-default">下拉菜单</button>
+			<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">资讯</a></li>
+				<li><a href="#">产品</a></li>
+				<li><a href="#">关于</a></li>
+			</ul>
+		</div>
+		<br /><br />
+		
+		<!--向上弹出式-->
+		<div class="dropup">
+			<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				下拉菜单
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">资讯</a></li>
+				<li><a href="#">产品</a></li>
+				<li><a href="#">关于</a></li>
+			</ul>
+		</div>
+		
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

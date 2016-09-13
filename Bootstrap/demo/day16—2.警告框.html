@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>警告框</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!--警告框就是点击时弹出的信息框-->
+			<!--基本实例-->
+			<div class="alert alert-warning">
+				<button class="close" data-dismiss="alert" type="button">
+					<span class="">&times;</span>
+				</button>
+				<p>警告:你的浏览器不支持!</p>
+			</div>
+			
+			<!--设置淡入淡出效果-->
+			<div class="alert alert-warning fade in">
+				<button class="close" data-dismiss="alert" type="button">
+					<span class="">&times;</span>
+				</button>
+				<p>警告:你的浏览器不支持!</p>
+			</div>
+			
+			<!--js实现-->
+			<div class="alert alert-warning fade in" id="odiv">
+				<button class="close" type="button" id="btn">
+					<span class="">&times;</span>
+				</button>
+				<p>警告:你的浏览器不支持!</p>
+			</div>
+			
+			<p style="text-align: center; padding-top: 30px;">
+				<img src="img/alert事件.png" />
+			</p>
+			
+			
+			<script>
+				$(function(){
+					$("#btn").on("click",function(){
+						$("#odiv").alert("close");
+					});
+				})
+			</script>
+		
+	</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>输入框</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="js/jquery-3.1.0.min.js"></script>
+	</head>
+	<body>
+		
+		<!--在左侧添加文字-->
+		<div class="input-group">
+			<span class="input-group-addon">左侧文字</span>
+			<input type="text" class="form-control" />
+		</div>
+		<br />
+		
+		<!--在右侧添加文字-->
+		<div class="input-group">
+			<input type="text" class="form-control">
+			<span class="input-group-addon">@163.com</span>
+		</div>
+		<br />
+		
+		<!--在两侧添加文字-->
+		<div class="input-group">
+			<span class="input-group-addon">网址</span>
+			<input type="text" class="form-control" />
+			<span class="input-group-addon">@163.com</span>
+		</div>
+		<br />
+		
+		<!--设置尺寸，另外三种分别是默认、xs、sm-->
+		<div class="input-group input-group-lg"></div>
+		<br />
+		
+		<!--左侧使用复选框-->
+		<div class="input-group">
+			<span class="input-group-addon">
+				<input type="checkbox" />
+			</span>
+			<input type="text" class="form-control" />
+		</div>
+		<br />
+		
+		<!--左侧使用单选框-->
+		<div class="input-group">
+			<span class="input-group-addon">
+				<input type="radio">
+			</span>
+			<input type="text" class="form-control">
+		</div>
+		<br />
+		
+		<!--左侧使用按钮-->
+		<div class="input-group">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button">按钮</button>
+			</span>
+			<input type="text" class="form-control" />
+		</div>
+		<br />
+		
+		<!--左侧使用下拉菜单或分列式-->
+		<div class="input-group">
+			<span class="input-group-btn">
+				<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li class="dropdown-header">网站导航</li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">资讯</a></li>
+					<li class="divider"><a href="#">产品</a></li>
+					<li class="disabled"><a href="#">关于</a></li>
+				</ul>
+			</span>
+			<input type="text" class="form-control">
+		</div>
+		
+	<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

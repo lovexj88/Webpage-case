@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header{ background:url(../img/bg.gif) repeat-x left; overflow:hidden}
+.header h1{ line-height:60px;margin:0 20px; font-size:20px;}
+.header a{ float:right; color:#fff}

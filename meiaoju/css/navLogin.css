@@ -1,0 +1,53 @@
+@charset "utf-8";
+html,body{width:100%;height:100%;}
+body,img,ul,li,dl,dt,dd,h1,h3,input,img,p{margin:0;padding:0;}
+img{border: none;}
+body{background:#efefef;font-family: "微软雅黑";}
+li{list-style: none;}
+a{text-decoration: none;}
+
+
+
+.bannerBox{width:100%;height:460px;background:url(../img/banner.jpg) no-repeat;background-size:100% 100%;}
+.banner{width:1072px;margin: 0 auto;height:460px;}
+.bannerTop{width:1072px;height: 59px;background:url(../img/bannerBorder.png) no-repeat left bottom;}
+.bannerTop li{float: left;font-size: 14px;margin-top: 22px;height: 59px;}
+.bannerTop li a{color:#999cba;} 
+.logo{float: left;width: 82px;display: block;margin-top: 15px;}
+.nav{width:500px;height: 59px;float: left;}
+.login{float: right;width: 400px;height:37px;text-align: right;margin-top: 22px;}
+.login a{padding: 0 7px;color:#999cba;font-size: 14px;}
+.nav li{padding: 0 20px;}
+
+
+.meiti{height: 620px;width: 1072px;margin: 0 auto;padding-top: 38px;}
+.news{width: 474px;height: 211px;background:url(../img/meitiBg.png);padding-left: 18px;margin-top: 30px;float: left;margin-left: 28px;}
+.news dt{width: ;font-size: 18px;color: #333;line-height: 68px;font-weight: bold;}
+.news img{float: left;width: 160px;height: 100px;}
+.news p{float: left;width: 240px;padding-left: 18px;}
+.content span{font-size: 12px;color: #666;line-height: 16px;}
+.content .time{color: #999;}
+
+.footerBox{height: 270px;background: #15262f;}
+.footer{width: 1072px;height: 242px;margin: 0 auto;padding-top: 28px;}
+.footUl{height: 124px;border-bottom: 1px solid #899195;}
+.footUl li{float: left;}
+.footPic{width: 192px;height: 106px;border-right: 1px solid #899195;}
+.english{color: #f0f1f1;font-size: 28px;}
+.vip{width: 198px;height: 106px;padding-left: 44px;border-right: 1px solid #899195;}
+.vip1{font-size: 20px;color: #f0f1f1;line-height: 26px;font-weight: bold;}
+.vip2{font-size: 14px;color: #f0f1f1;line-height: 20px;}
+.aboutUs{width: 91px;padding-left: 20px;height: 106px;border-right: 1px solid #899195;}
+.aboutUsTip{font-size: 14px;line-height: 22px;color: #fff;}
+.aboutUs ul li{width: 58px;padding-left: 11px;background: url(../img/footBg.png) no-repeat left center;}
+.aboutUs ul li a{font-size: 12px;color: #999999;}
+.erweima{padding-left: 88px;}
+.erweima dl{float: left;}
+.footTubiao{width: 117px}
+.footTubiao dt{font-size: 14px;line-height: 20px;color: #fff;}
+.footTubiao img{margin:12px 16px 0 0;}
+.footTubiao2{width: 98px;}
+.footTubiao2 p{color:#999999;font-size: 14px;line-height: 24px;}
+.copy{color: #999999;line-height: 42px;font-size: 14px;text-align: center;}
+
+

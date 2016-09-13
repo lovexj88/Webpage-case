@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>路径分页组件</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<!--1、路径组件-->
+			<!--面包屑导航-->
+			<ol class="breadcrumb">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">展品列表</a></li>
+				<li class="active">韩版2015年羊绒毛衣</li>
+			</ol>
+			
+		<!--2、分页组件-->
+			<!--默认分页-->
+			<ul class="pagination">
+				<li><a href="#">&laquo;</a></li>
+				<li class="active"><a href="#">1</a></li>
+				<li class="disabled"><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&raquo;</a></li>
+			</ul>
+			<br />
+			
+			<!--设置尺寸，四种 lg、默认、sm 和 xs-->
+			<ul class="pagination pagination-lg">
+				<li><a href="#">&laquo;</a></li>
+				<li class="active"><a href="#">1</a></li>
+				<li class="disabled"><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&raquo;</a></li>
+			</ul>
+			
+			<!--翻页效果-->
+			<ul class="pager">
+				<li><a href="#">上一页</a></li>
+				<li><a href="#">下一页</a></li>
+			</ul>
+			
+			<!--对齐翻页-->
+			<ul class="pager">
+				<li class="previous"><a href="#">上一页</a></li>
+				<li class="next"><a href="#">下一页</a></li>
+			</ul>
+			
+			<!--翻页项禁用-->
+			<ul class="pager">
+				<li class="previous disabled"><a href="#">上一页</a></li>
+				<li class="next"><a href="#">下一页</a></li>
+			</ul>
+		
+		
+	</body>
+	
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.1.0.min.js"></script>
+</html>

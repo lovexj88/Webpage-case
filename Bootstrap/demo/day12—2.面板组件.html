@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>面板组件</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<!--面板组件就是一个存放内容的容器组件-->
+			<!--基本实例-->
+			<div class="panel panel-default">
+				<div class="panel-body">
+					这里是详细内容!
+				</div>
+			</div>
+		
+			<!--带标题内容的面板-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					面板标题
+				</div>
+				<div class="panel-body">
+					这里是详细内容器
+				</div>
+			</div>
+		
+			<!--设置标题元素-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						面板标题
+					</h3>
+				</div>
+				<div class="panel-body">
+					这里是详细内容器
+				</div>
+				<div class="panel-footer">
+					这里是底部
+				</div>
+			</div>
+			
+			<!--情景效果：default、success、info、warning、danger、primary-->
+			<div class="panel panel-success">
+				情景效果
+			</div>
+			
+			<!--表格类面板-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					表格标题
+				</div>
+				<div class="panel-body">
+					<p>这里是表格的详细内容</p>
+				</div>
+				<table class="table">
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+				</table>
+			</div>
+			
+			<!--列表类面板-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					列表标题
+				</div>
+				<div class="panel-body">
+					<p>这里是列表的详细内容</p>
+				</div>
+				<ul class="list-group">
+					<li class="list-group-item">这里是首页</li>
+					<li class="list-group-item">这是第二页</li>
+					<li class="list-group-item">这是第三页</li>
+					<li class="list-group-item">这里是最后一页</li>
+				</ul>
+			</div>
+		
+	</body>
+</html>

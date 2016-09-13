@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>巨幕页头警告框</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+	</head>
+	<body>
+		<!--1、巨幕组件-->
+			<!--在固定区域，有圆角-->
+			<div class="container">
+				<div class="jumbotron">
+					<h2>网站标题</h2>
+					<p>这是一个学习性的网站</p>
+					<p><a href="#" class="btn btn-default">更多内容</a></p>
+				</div>
+			</div>
+			
+			<!--100%全屏，没有圆角-->
+			<div class="jumbotron">
+				<div class="container">
+					<h2>网站标题</h2>
+					<p>这是一个学习性的网站</p>
+					<p><a href="#" class="btn btn-default">更多内容</a></p>
+				</div>
+			</div>
+			
+		<!--2、页头组件-->
+			<!--增加一些空间-->
+			<div class="page-header">
+				<h1>大标题<small>小标题</small></h1>
+			</div>
+		
+		<!--3、警告框组件-->
+		<!--警告框组件是一组预定义消息-->
+			<!--基本警告框-->
+			<div class="alert alert-info">Bootstrap信息</div>
+			<div class="alert alert-success">Bootstrap成功</div>
+			<div class="alert alert-warning">Bootstrap警告</div>
+			<div class="alert alert-danger">Bootstrap危险</div>
+			
+			<!--带关闭的警告框-->
+			<div class="alert alert-success">
+				Bootstrap
+				<button type="button" class="close" data-dismiss="alert">
+					<span>&times;</span>
+				</button>
+			</div>
+			
+			<!--自动适配的超链接-->
+			<div class="alert alert-success">
+				Bootstrap,请到官网 <a href="http://www.baidu.com" class="alert-link">下载</a>
+			</div>
+		
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-3.1.0.min.js"></script>		
+	</body>
+</html>

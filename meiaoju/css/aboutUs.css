@@ -1,0 +1,51 @@
+.bannerBox{background:url(../img/banneraboutUs.png);background-size: 100% 100%;}
+.bannerBox .bannerTip{font-size: 46px;width: 1072px;color: #fff;font-weight: bold;line-height: 70px;text-align: center;margin-top: 80px;}
+.bannerIntro{font-size: 20px;color: #fff;text-align: center;margin-top: 22px;}
+.lijizhuce{display: block;color: #fff;width: 233px;height: 53px;background: url(../img/yuanjiao.png) no-repeat;margin:40px auto 0;line-height: 54px;font-size: 18px;text-align: center;}
+
+
+.advantage{width: 1072px;height: 557px;margin: 0 auto;overflow: hidden;}
+.advantage1,.advantage2{text-align: center;}
+.advantage1{font-size: 30px;color:#666666;margin-top: 50px;}
+.advantage2{font-size: 14px;color:#666666;padding:3px 0 20px;background: url(../img/new_border.png) no-repeat center bottom;}
+.advantagePic{width: 450px;margin: 20px auto 0;}
+.advantagePic dl{float: left;width: 100px;padding: 0 25px;}
+.advantagePic dd{font-size: 18px;color: #565659;line-height: 32px;text-align: center;}
+.gou li{float: left;margin-top: 58px;width: 355px;height: 121px;border: 1px solid #e1e1e1;text-align: center;position: relative;}
+.gou1{font-size: 18px;color: #565659;line-height: 54px;margin-top: 20px;}
+.gou2{font-size: 16px;color: #666666;line-height: 22px;}
+.gou li img{display: block;position: absolute;top: -21px;left: 160px;}
+
+
+.banner2Box{height: 480px;background:url(../img/banner2.png);background-size: 100% 100%;}
+.banner2{width: 1072px;height: 480px;margin: 0 auto;overflow: hidden;}
+.banner2 .advantage1{margin-top: 20px;color: #fff;}
+.banner2 .advantage2{background: url(../img/baitiao.png) no-repeat center bottom;color: #a7a6a7;}
+.banner2 dl{float: left;width: 357px;text-align: center;margin-top: 20px;}
+.font18{font-size: 18px;line-height: 44px;color: #fff;}
+.font16{font-size: 16px;line-height: 36px;color: #fff;}
+.font14{font-size: 14px;line-height: 28px;color: #fff;}
+
+
+.whyBox{background: #fff;height: 470px;}
+.why{width: 1072px;height: 470px;margin: 0 auto;}
+.why div{float: left;}
+.whyLeft{width: 388px;margin-top: 44px;}
+.whyRight{width: 684px;}
+.whyContent{font-size: 13px;color: #999999;line-height: 26px;margin-top: 20px;}
+
+
+.meiti .advantage1{margin-top: 10px;}
+.meiti .advantage2{font-size: 14px;color:#999999;}
+
+
+.guanxiBox{height: 466px;background: #fff;}
+.guanxi{width: 1072px;height: 416px;margin: 0 auto;padding-top: 50px;}
+.guanxiLeft{width: 640px;float: left;}
+.guanxiIntro{float: left;width: 392px;padding-left: 40px;}
+.guanxiIntro1{color: #666666;font-size: 26px;text-align: center;}
+.guanxiIntro1 span{font-size: 42px;color: #fc6808;font-weight: bold;}
+.guanxiIntro2{color: #fc6808;font-size: 30px;text-align: center;margin-bottom: 20px;}
+.guanxiIntro3{font-size: 18px;color: #666666;line-height: 30px;text-indent: 2em;}
+.guanxiIntro .lijizhuce{margin-top: 20px;}
+

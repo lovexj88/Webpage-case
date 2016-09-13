@@ -1,0 +1,29 @@
+body,ul,li,dl,dd,dt,h1,h3,input,img,p{margin: 0;padding: 0;}
+body{font-family: "微软雅黑";}
+img{border: none;}
+a{text-decoration: none;}
+li{list-style: none;}
+
+
+.navLogoBox{height: 103px;background: #fefefe;}
+.navLogo{width: 1140px;height: 103px;margin: 0 auto;background: #fefefe;}
+.logo{width:249px;height: 58px;background: url(../img/logo.png) no-repeat;float: left;margin-top: 24px;}
+.logo h1{text-indent: -999px;}
+.logoRight{height: 45px;width: 120px;padding-left: 23px;float: left;background: url(../img/borderLeft.png) no-repeat left center;margin: 32px 0 0 29px;}
+.logoRight i{color: #979998;font-size: 12px;line-height: 26px;}
+.nav{width: 609px;height: 72px;float: right;margin-top: 31px;}
+.nav li{width: 87px;height: 72px;text-align: center;float: left;}
+.nav li a{font-size: 12px;line-height: 72px;color: #000;font-weight: bold;}
+.nav li:hover{background:#f75a53 url(../img/navbg.png) no-repeat center top;}
+.active{background:#f75a53 url(../img/navbg.png) no-repeat center top;;}
+
+
+.footer{height: 138px;background: #363636;overflow: hidden;}
+.href{width: 556px;height: 13px;margin: 30px auto 10px;}
+.href li{float: left;text-align: center;}
+.href li a{font-size: 11px;line-height: 12px;color: #7a7a7a;display: block;width: 69px;height: 13px;background: url(../img/images/footBg.png) no-repeat right center}
+.href li .noBorder{background: none;}
+.footer p{font-size: 11px;color: #7a7a7a;line-height: 26px;text-align: center;}
+
+
+

@@ -1,0 +1,91 @@
+body{font:12px/26px "微软雅黑";}
+body,ul,li,h1,h3,p,input,img{margin:0;padding:0;}
+li{list-style:none;}
+a,img{text-decoration:none;color:#000;border-style:none;}
+
+
+.header{height:35px; background:#e4e4e4;}
+.headcon{width:1002px; margin:0 auto; height:35px;}
+.headleft{float:left;}
+.headleft li{float:left; padding:0 9px; background:url(../images/img01.jpg) no-repeat right center;}
+.headleft .noborder{background:none;}
+.header a{color:#666; line-height:34px;}
+.headright{float:right;width:365px;}
+.headright a{float:left; margin-right:17px;}
+.headright p{float: right;}
+.headright input{float:left; border:0;margin-top: 7px;}
+
+
+.txt{width:140px; height:20px; color:#cacbd0; line-height:20px;}
+.btn{width:29px; height:20px; background:url(../img/search.jpg) no-repeat left top; margin-left: 5px;}
+
+
+.logo{width:1002px; height:98px; margin:0 auto; background:url(../img/logoRight.jpg) no-repeat 680px 30px; padding:20px 0 0 16px;}
+
+
+.nav{height:44px; background:#d92b34;}
+.nav ul{width:1002px; margin:0 auto; background:#c8141f; height:44px;}
+.nav li{float:left;}
+.nav a{color:#fff; font-size:16px; padding:0 18px; line-height:44px; display:block;}
+
+
+.navRight{height:328px; background:#e6e6e6;}
+.bannerbox{width:1002px; height:328px; background:#3F9; margin:0 auto;}
+.bannerboxleft{float:left; width:669px;}
+.newslist{width:253px; padding:11px 40px 0; float:right; height:314px;background:#eee; border-bottom:3px solid #d00;}
+.newslist li{border-bottom:1px dashed #d9d9d9; line-height:20px; padding:9px 0;}
+.newslist a{color:#444;font-weight: bold;font-size: 14px;}
+.newslist span{color:#777;}
+.newslist .more{font-family:"宋体"; text-align:right; border:none; }
+.newslist .more a{color:#666;}
+
+
+.banner{width:1003px;margin:0 auto;}
+.banner:after{content:".";clear:both;height:0;display:block;overflow:hidden;visibility:hidden;}
+.bannerLeft{width:710px;float: left;}
+.bannerLeftTop{width:710px;}
+.bannerLeftTop1{width:270px;height:260px;float:left;}
+.bannerLeftTop2{width:420px;height:260px;float:right;}
+.bannerLeftTop1 p{width:290px;height:28px;line-height:28px;text-align:center;font-size:12px;font-weight:bold;color:#676769;margin-top:-10px;}
+.bannerLeftTop1 p{width:180px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:block;margin:0 auto;}
+.bannerLeftTop1 img{margin-top:12px;}
+.bannerLeft h3{line-height:40px;font-size:16px;font-weight:bold;margin-top:42px;}
+.bannerLeftTop2 ul{float:left;}
+.picture{width:74px;margin-top: 12px;}
+.picture li{width:74px;height: 73px;}	
+.pictureNews{width:346px;height:108px;margin-top: 10px;}
+.pictureNewsFont12{font-size: 12px;color:#272727 ;}
+.pictureNewsFont10{font-size: 10px;color:#707070 ;line-height: 22px;}
+.bannerLeftBottom{height:250px;}
+.bannerLeftBottom1{width:272px;height:250px;float: left;}
+.bannerLeftBottom2{width:400px;height:250px;float: right;}
+.bannerLeftBottom1News{height: 144px;font-size: 10px;line-height: 24px;}
+.bannerLeftBottom2News{height: 144px;font-size: 10px;line-height: 24px;}
+.bannerLeftBottom li{line-height: 25px;}
+.bannerLeftBottom a{float: left;color: #272727;}
+.bannerLeftBottom span{float: right;color: #656563;}
+.bannerRight{margin-top: 42px;width: 241px;float: right;}
+.bannerRightImg{background: url(../img/bannerRightBg.jpg);padding: 11px;}
+.bannerRightImg2{margin:20px 0;}
+.bannerRightEmail{margin-top:32px;}
+.bannerRightEmail h3{color:#878789;line-height:40px;font-size:16px;font-weight:bold;}
+.bannerRightEmail input{border: 1px solid #ccc;width:216px;height:26px;margin:0 0 6px 0;}
+.bannerRightEmail form{padding-top:20px}
+.bannerRightEmail .bannerRightBtn{height:24px;width:80px;background:#f0f0f0;}
+.bannerRightEmail a{margin-left:50px;}
+.bannerRightBtn{float:left;}
+.bannerPicture{height:12px;padding-top: 5px;margin-top:82px;background:url(../img/bannerPicture.jpg) repeat-x;}
+.bannerPicture img{display:block;margin:0 auto;}
+.href{height:42px;background:#d4d4d4;margin-top:12px;}
+.hrefNav{width:1003px;height:42px;background:#d4d4d4;margin:0 auto;}
+.hrefNav ul{width:1003px;height:42px;}
+.hrefNav ul li{width:200px;height:42px;float:left;font-size:14px;line-height:42px;text-align:center;}
+
+
+.footer{background:#302728;height:130px;}
+.foot{width:933px;height:30px;padding:18px 0 0 70px;margin:0 auto;border-bottom:1px solid #3b3233;}
+.foot ul li{height:14px;padding:0 10px;float:left;line-height:14px;border-right:1px solid #fff;}
+.foot ul li a{font-size:12px;color:#fff;}
+.foot ul .footNoborder{border:0;}
+.footBottom{width:1003px;height:62px;margin:0 auto;text-align:center;	padding:19px 0 0 0;}
+.footBottom p{font-size:12px;line-height:22px;color:#949391;}

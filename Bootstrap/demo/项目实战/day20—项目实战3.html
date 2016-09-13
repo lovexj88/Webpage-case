@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>项目实战3</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand" id="logoBox">
+						<img src="img/logo.png" id="logo" />
+					</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navShow">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navShow">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-list"></span> 资讯</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-fire"></span> 案例</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="carousel slide banner" id="myCarousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" class="active" data-slide-to="0"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner bannerPicBox">
+				<div class="item active" style="background: #223240;">
+					<img src="img/banner1.png" alt="第一张" />
+				</div>
+				<div class="item" style="background:#F5E4DC;">
+					<img src="img/banner2.png" alt="第二张" />
+				</div>
+				<div class="item" style="background:#DE2A2D;">
+					<img src="img/banner3.png" alt="第三张" />
+				</div>
+			</div>
+			<a href="#myCarousel" data-slide="prev" class="carousel-control left bannerControl">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a href="#myCarousel" data-slide="next" class="carousel-control right bannerControl">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+		
+		<div class="tab1">
+			<div class="container">
+				<h2 class="tab-h2">「 为什么选择瓢城企业培训 」</h2>
+				<p class="tab-p">强大的师资力量，完美的实战型管理课程，让您的企业
+				实现质的腾飞！</p>
+				<div class="row">
+					<div class="col-md-6 col">
+						<div class="media">
+							<div class="media-left media-top">
+								<a href="#">
+								<img class="media-object"
+								src="img/tab1-1.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">课程内容</h4>
+								<p class="text-muted">其他：高校不知名的讲师编写，没有任何实战价值的教材！</p>
+								<p>我们：知名企业家、管理学大师联合编写的具有实现性教材！</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col">
+						<div class="media">
+							<div class="media-left media-top">
+								<a href="#">
+								<img class="media-object"
+								src="img/tab1-2.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">师资力量</h4>
+								<p class="text-muted">其他：非欧美正牌大学毕业的、业界没有知名度的讲师！</p>
+								<p>我们：美国哈佛、耶鲁等世界一流高校、享有声誉的名牌专家！</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col">
+						<div class="media">
+							<div class="media-left media-top">
+								<a href="#">
+								<img class="media-object"
+								src="img/tab1-3.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">课时安排</h4>
+								<p class="text-muted">其他：无法保证上课效率、没有时间表，任务无法完成！</p>
+								<p>我们：保证上课效率、制定一张时间表、当天的任务当天完成！</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col">
+						<div class="media">
+							<div class="media-left media-top">
+								<a href="#">
+								<img class="media-object"
+								src="img/tab1-4.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">服务团队</h4>
+								<p class="text-muted">其他：社会招聘的、服务水平参差不齐的普通员工！</p>
+								<p>我们：内部培养、经受过良好高端服务培训的高标准员工！</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script>
+			$(function(){
+				//设置自动播放
+				$('#myCarousel').carousel({
+					//设置自动播放/2 秒
+					interval : 2000,
+					//设置暂停按钮的事件
+					pause : 'hover',
+					//是否循环
+					wrap : true,
+				});
+				
+			})
+		</script>
+		
+	</body>
+</html>

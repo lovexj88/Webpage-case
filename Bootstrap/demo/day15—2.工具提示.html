@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>工具提示</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!--工具提示就是通过鼠标移动选定在特定的元素上时，显示相关的提示语-->
+			<!--基本实例-->
+			<a href="#" data-toggle="tooltip" title="超文本标识符">HTML5</a>
+			<br /><br />
+			
+			<!--js声明-->
+			<a href="#" id="toolTip" title="超文本标识符">HTML6</a>
+			<br /><br />
+			
+			<!--多种属性-->
+			<!--<a href="#" rel="tooltip" data-toggle="tooltip" title="超文本标识符"
+				data-animation="false"
+				data-html="true"
+				data-placement="auto"
+				data-selector="a[rel=tooltip]"
+				data-trigger="click"
+				data-delay="500"
+				data-template="<b>123</b>">
+				HTML5
+			</a>-->
+			
+			<p style="text-align: center;padding-top: 30px;">
+				<img src="img/工具提示.png" />
+			</p>
+			
+			<script>
+				$(function(){
+					$("#toolTip").tooltip();
+				})
+			</script>
+		
+	</body>
+</html>

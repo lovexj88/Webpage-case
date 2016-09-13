@@ -1,0 +1,49 @@
+@charset "utf-8";
+body,ul,li,dl,dd,dt,h1,h2,h3,input,p,img{margin: 0;padding: 0;}
+li{list-style: none;}
+body{font-family: "微软雅黑";}
+a{text-decoration: none;}
+img{border: none;}
+html,body{width: 100%;height: 100%;}
+
+
+.header{margin: 0 auto;height: 90px;background: #7ab5e9 url(../img/headBg.png) repeat-x left bottom;}
+.headerLeft{float: left;margin: 17px 0 0 30px;}
+.headerRight{float: right;width: 700px;height: 90px;}
+.login{width: 268px;height: 22px;margin-right: 30px;float: right;background: #fdfcfa;}
+.nav{height: 48px;margin-top: 32px;clear: both;}
+.nav li{width: 70px;float: left;font-size: 12px;padding: 0 15px;padding-top: 6px;height: 50px;line-height: 18px;}
+.nav li:hover{background: url(../img/tubiao.png) 0 -645px;}
+.nav li a{display: block;width: 60px;color: #fff;padding-top: 30px;background: url(../img/tubiao.png) no-repeat 17px 0;text-align: center;}
+.nav li .nav2{background-position: 15px -66px;}
+.nav li .nav3{background-position: 17px -134px;}
+.nav li .nav4{background-position: 17px -205px;}
+.nav li .nav5{background-position: 17px -272px;}
+.nav li .nav6{background-position: 17px -340px;}
+.nav li .nav7{background-position: 17px -406px;}
+.loginLeft{float: left;width: 9px;height: 22px;background: url(../img/tubiao.png) no-repeat -182px -609px;}
+.huanying{color: #6d6d6d;font-size: 11px;line-height: 22px;float: left;width: 95px;padding-left: 40px;background: url(../img/tubiao.png) no-repeat -56px -210px;}
+.tuichu{width: 76px;height: 22px;float: left;padding-left: 20px;color: #551a8b;font-size: 11px;line-height: 22px;background: url(../img/tubiao.png) no-repeat -67px -239px;}
+.loginRight{float: right;width: 9px;height: 22px;background: url(../img/tubiao.png) no-repeat -5px -609px;}
+
+
+.left{width: 196px;float: left;border-right: 1px solid #407ec7;min-height: 800px;background: #417ec8;}
+.leftTop{width: 195px;height: 26px;background:#407ec7 url(../img/tubiao.png) no-repeat 0 -767px;border-right: 1px solid #4e8cd5;}
+.LeftNav{width: 196px;}
+.LeftNav li{background: #417ec8;border-top:1px solid #0b65b1;}
+.LeftNav li:hover{background:url(../img/leftLiBg.png);}
+.LeftNav li:hover a{color:#000;}
+.LeftNav li:hover ul{display: block;}
+.LeftNav>li>a{display: block;width: 57px;padding-left:36px;line-height: 34px;background: url(../img/tubiao.png) no-repeat -55px -418px;font-size: 14px;color: #fff;}
+.LeftNav li ul{width: 196px;background: #417ec8;display: none;}
+.LeftNav li ul li{font-size: 12px;line-height: 30px;height: 30px;padding-left: 20px;}
+.LeftNav li ul li:hover{background:#7ab5e9;}
+.LeftNav>.interface>a{background-position: -52px -514px;}
+.LeftNav>.jicheng>a{background-position: -168px -458px;}
+
+.right{min-height: 800px;margin-left: 197px;height:100%;height: 800px;overflow: hidden;}
+iframe{width: 100%;height: 100%;}
+
+
+
+

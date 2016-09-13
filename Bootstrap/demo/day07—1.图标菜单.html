@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图标菜单</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	</head>
+	<body>
+		<a href="http://v3.bootcss.com/components/#glyphicons" class="center-block text-center">中文参考组件链接</a>
+	
+		<!--1、小图标组件-->
+			<!--小图标-->
+			<i class="glyphicon glyphicon-star"></i>
+			<span class="glyphicon glyphicon-star"></span>
+			<br /><br />
+			
+			<!--结合按钮-->
+			<button class="btn btn-default btn-lg">
+				<span class="glyphicon glyphicon-star"></span>
+			</button>
+			<br /><br />
+	
+		<!--2、下拉菜单组件-->
+			<!--基本格式-->
+			<div class="dropdown open">
+				<button class="btn btn-default" data-toggle="dropdown">
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">资讯</a></li>
+					<li><a href="#">产品</a></li>
+					<li><a href="#">关于</a></li>
+				</ul>
+			</div>
+			
+			<!--设置向上触发-->
+			<div class="dropup open">
+				<button class="btn btn-default" data-toggle="dropdown">
+					<span class="caret"></span>
+				</button>
+				<!--菜单项居右对齐，默认值是 dropdown-menu-left-->
+				<ul class="dropdown-menu dropdown-menu-right">
+					<!--设置菜单的标题，不要加超链接-->
+					<li class="dropdown-header">网站导航</li>
+					<!--设置菜单的分割线-->
+					<li class="divider"></li>
+					<!--设置菜单的禁用项-->
+					<li class="disabled"><a href="#">产品</a></li>
+				</ul>
+			</div>
+			
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-3.1.0.min.js"></script>
+	</body>
+</html>

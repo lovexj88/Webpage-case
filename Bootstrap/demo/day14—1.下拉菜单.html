@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>下拉菜单</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<script src="js/jquery-3.1.0.min.js"></script>
+	</head>
+	<body>
+		<!--声明式用法-->
+			<div class="dropdown">
+				<button class="btn btn-primary" data-toggle="dropdown">
+					下拉菜单
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">产品</a></li>
+					<li><a href="#">资讯</a></li>
+					<li><a href="#">关于</a></li>
+				</ul>
+			</div>
+			<!--声明式用法的关键核心：
+			1.外围容器使用 class="dropdown"包裹；
+			2.内部点击按钮事件绑定 data-toggle="dropdown"；
+			3.菜单元素使用 class="dropdown-menu"。-->
+			
+			<img src="img/下拉菜单.png" />
+		
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

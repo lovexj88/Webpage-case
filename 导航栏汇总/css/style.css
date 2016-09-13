@@ -1,0 +1,81 @@
+body,ul,li{
+	margin:0;padding:0;
+}
+li{
+	list-style:none;
+	float:left;
+}
+.nav1{
+	width:800px;
+	height:58px;
+	background:url(../img/nav1Bg.jpg);
+	margin:0 auto 30px;
+}
+.nav1 ul li{
+	width:100px;
+	height:53px;
+	background:url(../img/nav1P.jpg);
+	color:#fff;
+	line-height:53px;
+	text-align:center;
+	font-size:20px;
+}
+.nav1 ul li:hover{
+	background:url(../img/nav1BgC.jpg);
+}
+.noborder{
+	border:none;
+}
+
+.nav2{
+	width:800px;
+	height:35px;
+	background:yellow;
+	margin:0 auto 30px;
+}
+.nav2_1{
+	width:800px;
+	height:28px;
+	background:url(../img/nav2Bg.jpg) repeat-x;
+}
+.nav2 ul{
+	margin-left:10px;
+}
+.nav2 ul li{
+	height:28px;
+	width:100px;
+	background:url(../img/nav2Bg.jpg);
+	color:#fff;
+	line-height:28px;
+	text-align:center;
+	font-size:20px;
+	color:#000;
+}
+.nav2 ul li:hover{
+	background:yellow;
+	height:34px;
+	margin-top:-5px;
+	color:#fff;
+}
+
+.nav3{
+	width:800px;
+	height:36px;
+	background:yellow;
+	margin:0 auto;
+	border-bottom:1px solid #000;
+}
+.nav3 ul{
+	margin-left:10px;
+}
+.nav3 ul li{
+	height:34px;
+	width:80px;
+	margin-left:20px;
+	color:#fff;
+	line-height:34px;
+	text-align:center;
+	font-size:20px;
+	color:#ccc;
+	border:1px solid #ccc;
+}

@@ -1,0 +1,66 @@
+.hangzhou{width: 1180px;height: 89px;margin: 0 auto;}
+.hangzhouLeft{width: 112px;height: 89px;float: left;}
+.hangzhouLeft span{float: left;width: 92px;font-size: 34px;color: #f587a1;line-height: 88px;text-align: center;}
+.hangzhouLeft a{float: left;width: 20px;height: 89px;background: url(../img/tubiao.png) no-repeat -454px -200px;}
+.hangzhouCenter{margin-left: 168px;height: 89px;float: left;}
+.hangzhouCenter li{float: left;padding: 0 10px;line-height: 88px;font-size: 14px;}
+.hangzhouCenter li a{color: #666;}
+.hangzhouCenter li:hover a{color: #f587a1;}
+.sousuokuang{float: right;margin-top: 35px;}
+.sousuokuang input{width: 140px;height: 20px;float: left;border: none;font-size: 16px;color: #999999;}
+.sousuokuang span{float: left;width: 20px;height: 20px;background: url(../img/tubiao.png) no-repeat -14px -4px;}
+
+
+.bannerBox{height: 390px;background: #aeaeae;}
+.banner{width: 1180px;height: 390px;margin: 0 auto;position: relative;}
+.bannerLeft{width:370px;height: 390px;float: left;background: #333333;padding-left: 60px;overflow: hidden;}
+.bannerLeftBig{width: 296px;font-size: 29px;color: #cccccc;line-height: 34px;margin-top: 46px;}
+.bannerLeftSmall{width: 315px;font-size: 14px;color: #cccccc;line-height: 20px;margin-top: 30px;}
+.banner a{display: block;width: 12px;height: 22px;position: absolute;}
+.leftjiantou{top:190px;left:-30px;background: url(../img/tubiao.png) -456px -74px;}
+.rightjiantou{top:190px;right:-30px;background: url(../img/tubiao.png) -460px -159px;}
+
+
+.jingxuan{width: 1200px;overflow: hidden;margin: 0 auto;}
+.jingxuanTip{text-align: center;}
+.jingxuanTip a{color: #666;font-size: 18px;line-height:20px;padding-bottom: 4px;}
+.jingxuanTip a:hover{border-bottom: 5px solid #f3a8c3;}
+.jingxuanPic{margin-top: 20px;}
+.jingxuanPic li{float: left;width: 280px;height: 280px;margin:0 20px 20px 0;}
+.jingxuanPic .hasMarginR{margin-right: 15px;}
+.jingxuanPic .hasMarginB{margin-bottom: 15px;}
+.jingxuanIntro li{float: left;margin-right: 20px;height: 44px;width: 568px;background: #efefef;font-size: 14px;line-height: 44px;margin-bottom: 20px;color: #666666;padding-left: 12px;}
+.jingxuanIntro li span{float: left;}
+.jingxuanIntro li a{float: right;width: 40px;height: 44px;background:url(../img/tubiao.png) no-repeat -450px 4px;}
+
+
+.pinpai{height: 354px;width: 1180px;margin: 0 auto;}
+.pinpaiTip{font-size: 24px;color: #333;text-align: center;line-height: 60px;}
+.pinpaiPic li{float: left;width: 80px;height: 80px;background: url(../img/xiaoguanggao.png) no-repeat -2px -2px;margin-right: 20px;}
+.pinpaiPic .pinpaiPic2{background-position:-2px -84px;}
+.pinpaiPic .pinpaiPic3{background-position:-2px -166px;}
+.pinpaiPic .pinpaiPic4{background-position:-2px -250px;}
+.pinpaiPic .pinpaiPic5{background-position:-2px -340px;}
+.pinpaiPic .pinpaiPic6{background-position:-2px -438px;}
+.pinpaiPic .pinpaiPic7{background-position:-2px -514px;}
+.pinpaiPic .pinpaiPic8{background-position:-2px -600px;}
+.pinpaiPic .pinpaiPic9{background-position:-2px -690px;}
+.pinpaiPic .pinpaiPic10{background-position:-2px -340px;}
+.pinpaiPic .pinpaiPic11{background-position:-2px -866px;}
+.pinpaiPic .pinpaiPic12{background-position:-2px -953px;}
+.pinpaiPic .pinpaiPic13{background-position:-2px -1040px;}
+.pinpaiPic .pinpaiPic14{background-position:-2px -1130px;}
+.pinpaiPic .pinpaiPic15{background-position:-2px -1222px;}
+.pinpaiPic .pinpaiPic16{background-position:-2px -777px;}
+.pinpaiPic .pinpaiPic17{background-position:-2px -1310px;}
+.pinpaiPic .pinpaiPic18{background-position:-2px -1408px;}
+.pinpaiPic .pinpaiPic19{background-position:-2px -1493px;}
+.pinpaiPic .pinpaiPic20{background-position:-3px -1585px;}
+.pinpaiPic .pinpaiPic21{background-position:-2px -1673px;}
+.pinpaiPic .pinpaiPic22{background-position:-3px -1765px;}
+.pinpaiPic .pinpaiPic23{background-position:-1px -1855px;}
+.pinpaiPic .pinpaiPic24{background-position:-2px -1943px;}
+
+
+
+
