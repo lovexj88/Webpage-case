@@ -5,6 +5,7 @@
 		<title>优品惠购物车</title>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/gouwuche.css"/>
+		<link rel="stylesheet" type="text/css" href="css/sweetalert.css"/>
 		<script src="js/jquery-3.1.0.min.js"></script>
 	</head>
 	<body>
@@ -37,7 +38,9 @@
 		
 		<div class="jindu">
 			<div class="jinduLeft">
-				<img src="img/logo.png" />
+				<a href="index.html">
+					<img src="img/logo.png" />
+				</a>
 			</div>
 			<div class="jinduRight">
 				<img src="img/jindu.jpg" />
@@ -45,7 +48,7 @@
 		</div>
 		
 		<div class="goodShow">
-			<!--<table class="tab">
+			<table class="tab">
 				<thead>
 					<th class="tab1"><input type="checkbox">全选</th>
 					<th class="tab2">商品信息</th>
@@ -54,8 +57,8 @@
 					<th class="tab5">小计（元）</th>
 					<th class="tab6">操作</th>
 				</thead>
-				<tbody>
-					<tr>
+				<tbody id="gouwuInfo">
+					<!--<tr>
 						<td class="tab1"><input type="checkbox"></td>
 						<td class="tab2">
 							<img src="pictures/11001.jpg"/>
@@ -92,10 +95,15 @@
 						<td class="tab6">
 							<a href="#"><img src="img/shanchu.jpg"/></a>
 						</td>
-					</tr>
+					</tr>-->
 				</tbody>
 			</table>
-			<div class="noGood">
+			<p id="shopCarFooter">
+				<em>共有<i id="totalNum"></i>件商品</em>
+				<span>￥<b id="totalPrice"></b></span>
+				<a href="#" id="payMoney">立即结算</a>
+			</p>
+			<!--<div class="noGood">
 				<img src="img/noGood.jpg" />
 				<p><a href="index.html">去挑选物品→</a></p>
 			</div>-->
@@ -197,7 +205,7 @@
 									<img src="img/touxiang.jpg" />
 								</dt>
 								<dd>
-									你好！请&nbsp;<a href="#">登录</a>&nbsp;|&nbsp;<a href="#">注册</a>
+									你好！请&nbsp;<a href="login.html">登录</a>&nbsp;|&nbsp;<a href="register.html">注册</a>
 								</dd>
 							</dl>
 							<div>
@@ -240,6 +248,9 @@
 		
 		<script src="js/cookieBox.js"></script>
 		<script src="js/userCheck.js"></script>
+		<script src="js/sweetalert.min.js"></script>
+		<script src="js/sweetalert-dev.js"></script>
+		<script src="js/gouwuche.js"></script>
 		<script>
 			$(function(){
 				$("thead th input").click(function(){
@@ -254,8 +265,7 @@
 						});
 					}
 				});
-				
-			})
+			});
 		</script>
 		<script src="js/fixedShow.js"></script>
 		

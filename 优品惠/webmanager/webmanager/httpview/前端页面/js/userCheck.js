@@ -12,6 +12,7 @@ if(strCookie){
 		type: "GET",
 		url: "http://localhost:8080/product/GetProductById_get?id=00001",
 		success: function(data){
+			arr=strCookie.split("&");
 			var goodSum=0;
 			var userJson=JSON.parse(JSON.parse(data).Data);
 			var flag=false;
@@ -22,30 +23,7 @@ if(strCookie){
 						var info=userJson[i].shoppingInfo;
 						var totalNum=0;
 						var totalPrice=0;
-						console.log(info);
-						for(i=0;i<info.length;i++){
-							var goodInfo=info[i];
-							$.ajax({
-								type: "GET",
-								url: "http://localhost:8080/product/GetProductById_get?id="+goodInfo.goodId,
-								success: function(data){
-									var goodJson=JSON.parse(JSON.parse(data).Data);
-									var str="<li><img src=\"pictures/"+goodJson.imgsrc+"\" width=\"50\" height=\"50\" />";
-										str+="<a href=\"detail.html?id="+goodJson.id+"\" class=\"intro\">"+goodJson.name+"</a>";
-										str+="<em><i class=\"carPrice\">￥"+goodJson.price+"</i><b class=\"sum\">x&nbsp;"+goodInfo.num+"</b></em></li>";
-									$("#showInfo").append(str);
-									totalNum+=goodInfo.num;
-									totalPrice+=goodJson.price*goodInfo.num;
-								}
-							});			
-						}
-						setTimeout(function(){
-							var str2="<i><em>"+totalNum+"</em>件商品</i><span>￥"+totalPrice+"</span><a href=\"gouwuche.html\">去购物车结算</a>";
-							$(".showBottom").append(str2);
-							$(".shoppingNum").each(function(){
-								$(this).html(totalNum)
-							});
-						},200);
+						ajaxUtil(info,info.length-1,totalNum,totalPrice);
 					}
 				}
 			}
@@ -72,34 +50,7 @@ if(strCookie){
 		var info=JSON.parse(shoppingCookie);
 		var totalNum=0;
 		var totalPrice=0;
-		ajaxUtil(info,info.length-1,totalNum,totalPrice),
-		/*for(i=0;i<info.leng,th;i++){
-			var goodInfo=info[i];
-			console.log(goodInfo);
-			$.ajax({
-				type: "GET",
-				url: "http://localhost:8080/product/GetProductById_get?id="+goodInfo.goodId,
-				success: function(data){
-					var goodJson=JSON.parse(JSON.parse(data).Data);
-					console.log(goodJson);
-					console.log(goodInfo);
-					var str="<li><img src=\"pictures/"+goodJson.imgsrc+"\" width=\"50\" height=\"50\" />";
-						str+="<a href=\"detail.html?id="+goodJson.id+"\" class=\"intro\">"+goodJson.name+"</a>";
-						str+="<em><i class=\"carPrice\">￥"+goodJson.price+"</i><b class=\"sum\">x&nbsp;"+goodInfo.num+"</b></em></li>";
-					$("#showInfo").append(str);
-					console.log(goodInfo.num);
-					totalNum+=goodInfo.num;
-					totalPrice+=goodJson.price*goodInfo.num;
-				}
-			});				
-		}*/
-		setTimeout(function(){
-			var str2="<i><em>"+totalNum+"</em>件商品</i><span>￥"+totalPrice+"</span><a href=\"gouwuche.html\">去购物车结算</a>";
-			$(".showBottom").append(str2);
-			$(".shoppingNum").each(function(){
-				$(this).html(totalNum)
-			});
-		},200);
+		ajaxUtil(info,info.length-1,totalNum,totalPrice);
 		$(".gouwuche").on("mouseover",function(){
 			$(".showCarHas").css("display","block");
 		});
@@ -116,8 +67,13 @@ if(strCookie){
 	}
 }
 
-function ajaxUtil(arr,i,sum,sumMoney){
+function ajaxUtil(arr,i,totalNum,totalPrice){
 	if(i<0){
+		var str2="<i><em>"+totalNum+"</em>件商品</i><span>￥"+totalPrice+"</span><a href=\"gouwuche.html\">去购物车结算</a>";
+		$(".showBottom").append(str2);
+		$(".shoppingNum").each(function(){
+			$(this).html(totalNum);
+		});
 		return;
 	}else{
 		$.ajax({
@@ -131,9 +87,8 @@ function ajaxUtil(arr,i,sum,sumMoney){
 				$("#showInfo").append(str);
 				totalNum+=arr[i].num;
 				totalPrice+=goodJson.price*arr[i].num;
-				ajaxUtil(arr,i-1);
+				ajaxUtil(arr,i-1,totalNum,totalPrice);
 			}
 		});
 	}
 }
-

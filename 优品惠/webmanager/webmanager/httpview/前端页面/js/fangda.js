@@ -1,14 +1,14 @@
 	var pageHref=location.href;
 	var goodId=pageHref.split("=")[1];
 	
-	var arr = ["pictures/"+goodId+"_1.jpg","pictures/"+goodId+"_2.jpg","pictures/"+goodId+"_3.jpg","pictures/"+goodId+"_4.jpg","pictures/"+goodId+"_5.jpg"];
+	var arrPic = ["pictures/"+goodId+"_1.jpg","pictures/"+goodId+"_2.jpg","pictures/"+goodId+"_3.jpg","pictures/"+goodId+"_4.jpg","pictures/"+goodId+"_5.jpg"];
 	var oarr = ["pictures/"+goodId+"_1.jpg","pictures/"+goodId+"_2.jpg","pictures/"+goodId+"_3.jpg","pictures/"+goodId+"_4.jpg","pictures/"+goodId+"_5.jpg"];
 	
 	$(".imgBox img").each(function(index){
 		$(this).attr("src",oarr[index]);
 	})
-	$("#one img").attr("src",arr[0]);
-	$("#the img").attr("src",arr[0]);
+	$("#one img").attr("src",arrPic[0]);
+	$("#the img").attr("src",arrPic[0]);
 	$("#two img").each(function(index){
 		$(this).attr("src",oarr[index]);
 	});
@@ -19,7 +19,7 @@
 		tthe = $("#the img");
 	itwo.each(function(i){
 		$(this).click(function(){
-			$("#one img").attr("src",arr[i])
+			$("#one img").attr("src",arrPic[i])
 			tthe.attr("src",oarr[i])
 			itwo.removeClass("active")
 			$(this).addClass("active")

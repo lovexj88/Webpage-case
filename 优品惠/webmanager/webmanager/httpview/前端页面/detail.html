@@ -527,15 +527,28 @@
 											if(info[j].goodId==dataJson.id){
 												infoFlag=true;
 												info[j].num+=parseInt($("#num").val());
+												$("#showInfo li").eq(info.length-j-1).find(".sum").html("x&nbsp;"+info[j].num);
+												$(".showBottom em").html(parseInt($(".showBottom em").html())+parseInt($("#num").val()));
+												var htmlData=$(".showBottom span").html();
+												var totalMoney=htmlData.substring(1,htmlData.length);
+												$(".showBottom span").html("￥"+(parseInt(totalMoney)+parseInt($("#num").val())*dataJson.price));
 												
 											}
 										}
 										if(!infoFlag){
-											var nowJson={
+											var newJson={
 												"goodId":dataJson.id,
 												"num":parseInt($("#num").val())
 											};
-											info.push(nowJson);
+											info.push(newJson);
+											var str="<li><img src=\"pictures/"+dataJson.imgsrc+"\" width=\"50\" height=\"50\" />";
+												str+="<a href=\"detail.html?id="+dataJson.id+"\" class=\"intro\">"+dataJson.name+"</a>";
+												str+="<em><i class=\"carPrice\">￥"+dataJson.price+"</i><b class=\"sum\">x&nbsp;"+newJson.num+"</b></em></li>";
+											$("#showInfo").append(str);
+											var htmlData=$(".showBottom span").html();
+											var totalMoney=htmlData.substring(1,htmlData.length);
+											$(".showBottom span").html("￥"+(parseInt(totalMoney)+parseInt($("#num").val())*dataJson.price));
+											$(".showBottom em").html(parseInt($(".showBottom em").html())+newJson.num);
 										}
 									}
 								}
