@@ -199,7 +199,7 @@
 					<li><a href="#">快速查找</a></li>
 					<li><a href="#">销量</a></li>
 					<li><a href="#">上架时间</a></li>
-					<li><a href="#">价格</a></li>
+					<li><a href="#" id="sortPrice">价格</a></li>
 					<li><a href="#">特惠</a></li>
 				</ul>
 			</div>
@@ -358,6 +358,8 @@
 				var fenleiId=pageHref.split("=")[1];
 				var index1=fenleiId.substring(0,1);
 				var leng=fenlei[index1-1].fenleiMore.length;
+				var goodArr=[];
+				var clickFlag=0;
 				for(var i=0;i<leng;i++){
 					var str="<li><a href=\"list.html?id="+index1+""+(i+1)+"\"><img src=\"img/fenlei"+index1+"_"+(i+1)+".png\"/></a><a href=\"list.html?id="+index1+""+(i+1)+"\">"+(fenlei[index1-1].fenleiMore)[i]+"</a></li>";
 					$("#fenleiUl").append(str);
@@ -377,6 +379,21 @@
 					$("#titleName").text((fenlei[index1-1].fenleiMore)[index2-1]);
 				}
 				ajaxUtil();
+				$("#sortPrice").on("click",function(){
+					sortByPrice(clickFlag);
+					console.log(goodArr);
+					clickFlag=(clickFlag==0)?1:0;
+					$("#picBottom").html("");
+					for(var i=0;i<goodArr.length;i++){
+						var str="<dl><dt><a href=\"detail.html?id="+goodArr[i].id+"\"><img src=\"pictures/"+goodArr[i].imgsrc+"\"/></dt>";
+							str+="<dd><p class=\"goodTip\"><a href=\"detail.html?id="+goodArr[i].id+"\">"+goodArr[i].name+"</a></p>";
+							str+="<p class=\"money\"><a href=\"detail.html?id="+goodArr[i].id+"\" class=\"price\">￥"+goodArr[i].price+"</a></p>";
+							str+="<div class=\"goodStatus\"><span class=\"status1\">官网专供</span>";
+							str+="<span class=\"status2\">免运费</span></div></dd></dl>";
+						$("#picBottom").append(str);
+					}
+					return false;
+				});
 				function ajaxUtil(){
 					$.ajax({
 						type: "GET",
@@ -394,6 +411,7 @@
 												str+="<div class=\"goodStatus\"><span class=\"status1\">官网专供</span>";
 												str+="<span class=\"status2\">免运费</span></div></dd></dl>";
 											$("#picBottom").append(str);
+											goodArr.push(strData);
 										}
 									}
 									else{
@@ -404,6 +422,7 @@
 												str+="<div class=\"goodStatus\"><span class=\"status1\">官网专供</span>";
 												str+="<span class=\"status2\">免运费</span></div></dd></dl>";
 											$("#picBottom").append(str);
+											goodArr.push(strData);
 										}
 									}
 								}
@@ -413,6 +432,25 @@
 							alert("获取数据失败!");
 						}	 
 					});
+				}
+				function sortByPrice(flag){
+					for(var i=0;i<goodArr.length-1;i++){
+						for(var j=0;j<goodArr.length-i-1;j++){
+							if(flag==0){
+								if(parseInt(goodArr[j].price)>parseInt(goodArr[j+1].price)){
+									var temp=goodArr[j];
+									goodArr[j]=goodArr[j+1];
+									goodArr[j+1]=temp;
+								}
+							}else{
+								if(parseInt(goodArr[j].price)<parseInt(goodArr[j+1].price)){
+									var temp=goodArr[j];
+									goodArr[j]=goodArr[j+1];
+									goodArr[j+1]=temp;
+								}
+							}
+						}
+					}
 				}
 			})
 			

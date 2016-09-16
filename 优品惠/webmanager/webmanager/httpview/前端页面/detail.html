@@ -320,22 +320,11 @@
 			<div class="detailRight">
 				<h3 class="allLook">大家都在看</h3>
 				<ul class="picRight">
-					<!--li * 10-->
-					<li>
+					<!--<li>
 						<img src="pictures/detailTest_1.jpg" width="150" height="150"/>
 						<p class="picIntro">百纳箱上下有魔术贴 因此 不会像别的百纳箱一样 </p>
 						<p class="picPrice">￥598</p>
-					</li>
-					<li>
-						<img src="pictures/detailTest_1.jpg" width="150" height="150"/>
-						<p class="picIntro">百纳箱上下有魔术贴 因此 不会像别的百纳箱一样 </p>
-						<p class="picPrice">￥598</p>
-					</li>
-					<li>
-						<img src="pictures/detailTest_1.jpg" width="150" height="150"/>
-						<p class="picIntro">百纳箱上下有魔术贴 因此 不会像别的百纳箱一样 </p>
-						<p class="picPrice">￥598</p>
-					</li>
+					</li>-->
 				</ul>
 			</div>
 		</div>
@@ -503,6 +492,36 @@
 								var weizhi2=(fenlei[index1-1].fenleiMore)[index2-1];
 								$("#weizhi1").text(weizhi1);
 								$("#weizhi2").text(weizhi2);
+								randomGood();
+						},
+						error:function(){
+							alert("获取数据失败!");
+						}	 
+					});
+				}
+				function randomGood(){
+					$.ajax({
+						type: "GET",
+						url: "http://localhost:8080/product/GetProductsByPage_get?pagesize=100&pageindex=1",
+						success: function(data){
+							var index1=goodId.substring(0,1);
+							var dataJson=JSON.parse(data);
+							if(dataJson.length==0){
+								return;
+							}
+							else{
+								for(var i=0;i<10;i++){
+									if(dataJson[i].Id.substring(0,1)==index1){
+										var strData=JSON.parse(dataJson[i].Data);
+										if(strData.id!=goodId){
+											var str="<li><img src=\"pictures/"+strData.imgsrc+"\" width=\"150\" height=\"150\"/>";
+												str+="<p class=\"picIntro\"><a href=\"detail.html?id="+strData.id+"\">"+strData.name+"</a></p>";
+												str+="<p class=\"picPrice\">￥"+strData.price+"</p></li>";
+										$(".picRight").append(str);										}
+									}
+									
+								}
+							}
 						},
 						error:function(){
 							alert("获取数据失败!");

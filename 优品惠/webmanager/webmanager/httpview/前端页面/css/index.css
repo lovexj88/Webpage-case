@@ -24,7 +24,9 @@
 .jingxuanRight2 dl{border-bottom: 1px dashed #ddd;width: 265px;height: 115px;padding-bottom: 15px;}
 .jingxuanRight2 dt{float: left;width: 115px;}
 .jingxuanRight2 dd{float: left;width: 140px;margin-left: 10px;}
-.jingxuanRightIntro{font-size: 12px;line-height: 16px;color: #444;}
+.jingxuanRightIntro{font-size: 12px;line-height: 16px;}
+.jingxuanRightIntro a{color: #444;}
+.jingxuanRightIntro a:hover{text-decoration: underline;}
 .jingxuanRightPrice{color: #f70800;font-size: 16px;line-height: 26px;}
 .time{height: 24px;}
 .time a{float: left;color: #666;font-size: 12px;line-height: 22px;}

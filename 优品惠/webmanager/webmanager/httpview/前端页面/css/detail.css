@@ -86,7 +86,9 @@ b,i{font-style: normal;font-weight: normal;}
 
 .picRight{width: 148px;padding: 0 20px;}
 .picRight li{padding: 20px 0;border-bottom:1px dotted #f6f6f6;;}
-.picIntro{margin-top: 10px;margin-bottom: 10px;height: 32px;overflow: hidden;color: #222;}
+.picIntro{margin-top: 10px;margin-bottom: 10px;height: 32px;overflow: hidden;}
+.picIntro a{color: #222;}
+.picIntro a:hover{text-decoration: underline;color: red;}
 .picPrice{margin-right: 10px;color: #f70800;font-size: 16px;font-family: Arial;}
 
 .service{padding: 50px 0 0 0;width: 732px;margin: 0 auto;}
