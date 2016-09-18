@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+body{background: #fff;}
+b,i{font-style: normal;font-weight: normal;}
+
+.nowWeizhi{width: 1000px;margin: 0 auto 20px;color: #222;font-size: 12px;padding: 20px 0;border-bottom: 1px solid #e8e8e8;}
+.nowWeizhi a{color: #222;}
+.nowWeizhi a:hover{color: red;text-decoration: underline;}
+.nowWeizhi code{padding: 0 3px 0 6px;}
+
+.detailPic{width: 1000px;height: 510px;margin: 0 auto;}
+#one{width: 350px; height: 350px; border: 1px solid #CCCCCC; position: relative;}
+#one img{width: 350px;height: 350px;}
+#one span{width: 175px;height: 175px;position: absolute;border: 1px solid #AFAFAF;top: 0;left: 0;display: none}
+#one:hover span{display:block; background-image:url(../img/bg.png)}
+#wai{float: left;width: 350px;}
+#two{padding-left: 15px;margin-top: 20px;}
+#two img{border: 1px solid #ccc;width: 58px;height: 58px;}
+#two .active{border: 1px solid red;}
+#two img:hover{border: 1px solid red;}
+#the{width: 350px;height: 350px;position: absolute;left: 483px;background: #fff;z-index:10;;float: left;overflow: hidden;border: 1px solid #ccc;display: none;}
+#the img{position: absolute; display: block;width: 600px;height: 600px;}
+.detailPicLeft{float: left;}
+.detailPicRight{float: left;width: 600px;padding-left: 40px;}
+.goodId{width: 320px;height: 20px;clear: both;line-height: 20px;font-size: 12px;padding:10px 15px 0px;}
+.goodId span{float: left;color: #adadad;}
+.goodId i{float: right;}
+.goodId i a{float: left;margin-left: 15px;}
+.goodId i a b{float: left;margin-top:3px;width: 13px;height: 13px;background: url(../img/icons_1.png) no-repeat -72px -289px;}
+.goodId i .guanzhu b{background-position: -100px -268px;}
+.goodId i a em{float: left;padding-left: 5px;color: #000;}
+.detailPicRight h3{margin-bottom: 10px;width: 600px;color: #222;font-size: 18px;line-height: 22px;}
+.description{margin-bottom: 10px;font-size: 12px;color: #666;height: 30px;overflow: hidden;}
+.good_info{position: relative;padding: 15px 10px 10px 10px;font-size: 12px;margin-bottom: 15px;border: 1px dotted #e8e8e8;background-color: #fafafa;}
+.good_info li{color: #666;height: 46px;}
+.jiage{line-height: 46px;}
+.jiage1{margin-top: 15px;width: 40px;}
+.jiage2{padding-left: 10px;font-size: 34px;color: #f70800;}
+.jiage2 i{font-size: 24px;margin-top: 8px;}
+.youhui{padding-top: 10px;}
+.youhui1{width: 40px;vertical-align: top;}
+.youhui2 p{display: inline-block;margin-left: 16px;height: 20px;line-height: 20px;}
+.youhui2 p span{padding: 1px 8px;border-radius: 2px;background-color: #ff504a;color: #fff;}
+.youhui2 p i{padding-left: 10px;}
+.where{padding: 0 10px;margin-bottom: 15px;line-height: 26px;font-size: 12px;color: #000;}
+.where span{padding-right: 18px;}
+#distpicker1 select{width:120px;height: 26px;color: #222;}
+.where b{color: #d70008;padding-left: 10px;}
+.color{padding: 0 10px;line-height: 36px;font-size: 12px;color: #000;overflow: hidden;}
+.color span{padding-right: 18px;float: left;}
+.color b{float: left;margin-left: 3px;}
+.color img{border: 2px solid #ff504a;}
+.guige{padding: 0 10px;margin-bottom: 15px;line-height: 26px;font-size: 12px;color: #000;}
+.guige span{padding-right: 18px;}
+.guige b{padding: 5px 10px;text-align: center;border: 1px solid #ccc;}
+.shuliang {padding: 0 10px;margin-bottom: 15px;line-height: 26px;font-size: 12px;color: #000;overflow: hidden;}
+.shuliang span{float: left;padding-right: 18px;}
+.shuliang b{float: left;}
+.shuliang input{float: left;width: 50px;height: 26px;text-align: center;color: #222;border: 1px solid #ccc;}
+.shuliang a{float: left;height: 26px;width: 26px;font-size: 16px;text-align: center;color: #222;border: 1px solid #ccc;}
+#add{border-left: none;}
+#sub{border-right: none;}
+.addtocar a{width: 190px;height: 44px;margin-left: 8px;border-radius: 3px;opacity: 0.9;display: block;padding-left: 25px;line-height: 44px;font-size: 14px;color: #fff;background: #ff3d36;}
+.addtocar a:hover{opacity: 1;}
+.addtocar b{float: left;margin-left: 36px;width: 22px;height:24px;background: url(../img/addtocar.png) no-repeat;margin-top: 5px;}
+.addtocar i{float: left;padding-left: 5px;}
+
+.ad_detail{width: 1000px;margin: 0 auto;}
+
+.detailContent{width: 1000px;margin:20px auto 0;overflow: hidden;}
+.detailLeft{width: 788px;float: left;}
+.detailTip{height: 43px;border: 1px solid #e8e8e8;background-color: #f5f5f5;line-height: 43px;}
+.detailTip a{width: 160px;height: 43px;float: left;overflow: hidden;text-align: center;line-height: 42px;font-size: 14px;border-right: 1px solid #e8e8e8;color: #222;}
+.goodDetail{position: relative;background-color: #fff;color: #F70800;font-weight: bold;border-top: 2px solid #F70800;margin-top: -3px;top: 2px;}
+.xiangqing{padding: 50px 28px 10px;width: 730px;margin: 0 auto;border: 1px solid #ddd;border-top: none;}
+.h3Tip{width: 732px;height: 26px;margin-bottom: 20px;background: url(../img/title-bg.png) no-repeat 0 0;}
+.biaoge{width: 727px;border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+.biaoge li{height: 39px;font-size: 12px;line-height: 38px;overflow: hidden;}
+.biaoge li span{float: left;width: 80px;height: 38px;background-color: #FAFAFA;padding-left: 30px;color: #444;font-weight: bold;border-left:1px solid #ddd;border-top:1px solid #ddd;}
+.biaoge li i{padding-left: 20px;float: left;width: 595px;color: #666;height: 38px;border-left:1px solid #ddd;border-top:1px solid #ddd;}
+.imgBox{margin-top: 30px;}
+.imgBox img{width: 732px;}
+
+.detailRight{width: 188px;float: right;border: 1px solid #e8e8e8;border-top:2px solid #F70800;font-size: 12px;}
+.detailRight h3{padding:12px 20px 12px 20px;border-bottom:1px solid #e8e8e8;font-weight: bold;font-size: 12px;}
+
+.picRight{width: 148px;padding: 0 20px;}
+.picRight li{padding: 20px 0;border-bottom:1px dotted #f6f6f6;;}
+.picIntro{margin-top: 10px;margin-bottom: 10px;height: 32px;overflow: hidden;}
+.picIntro a{color: #222;}
+.picIntro a:hover{text-decoration: underline;color: red;}
+.picPrice{margin-right: 10px;color: #f70800;font-size: 16px;font-family: Arial;}
+
+.service{padding: 50px 0 0 0;width: 732px;margin: 0 auto;}
+.service h3{width: 732px;height: 26px;margin-bottom: 20px;background: url(../img/title-bg.png) no-repeat 0 -60px;}
+
+.border{height: 1px;background: #ddd;margin-top: 30px;}
+
+#addToCar{position: absolute;}

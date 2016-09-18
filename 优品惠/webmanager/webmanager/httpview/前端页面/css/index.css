@@ -45,6 +45,7 @@
 .clounmTop{padding-top: 40px;height: 20px;line-height: 20px;margin-bottom: 23px;border-bottom: 2px solid #333;text-align: center;}
 .cloumnBottom{padding-top: 30px;width: 1040px;margin: 0 auto;}
 .cloumnBottom img{margin:0 17px 17px 0;}
+.cloumnBottom img:hover{box-shadow: 0 0 30px #888;opacity: 0.8;}
 
 .global{width: 1020px;margin: 0 auto;overflow: hidden;}
 .globalTop{height: 20px;line-height: 20px;margin-bottom: 23px;border-bottom: 2px solid #333;text-align: center;}

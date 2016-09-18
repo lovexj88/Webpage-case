@@ -529,7 +529,11 @@
 					});
 				}
 				$("#distpicker1").distpicker();
-				$("#addToCar").click(function(){
+				$("#addToCar").click(function(e){
+					var scrolltop = $(window).scrollTop();
+					$(document).bind("scroll",function(){
+						$(window).scrollTop(scrolltop);
+					})
 					var userCookie=cookieObj.getCookie("userInfo");
 					if(userCookie){
 						var arr=userCookie.split("&");
@@ -576,8 +580,10 @@
 									type:"GET",
 									url:"http://localhost:8080/product/CreateUpdateProduct_get?id=00001&datajson="+dataStr,
 									success:function(){
-										goodFly(dataJson.id);
-										$(".shoppingNum").each(function(){
+										goodFly(dataJson.id,function(){
+											$(document).unbind("scroll");
+										});
+											$(".shoppingNum").each(function(){
 											$(this).html(parseInt($(this).html())+parseInt($("#num").val()));
 										})
 									},
@@ -630,7 +636,9 @@
 							strCookie=JSON.stringify(newJson);
 							cookieObj.setCookie("shoppingCar",strCookie,30);
 						}
-						goodFly(dataJson.id);
+						goodFly(dataJson.id,function(){
+							$(document).unbind("scroll");
+						});
 						$(".shoppingNum").each(function(){
 							$(this).html(parseInt($(this).html())+parseInt($("#num").val()));
 						});
@@ -664,6 +672,7 @@
 						duration:2000,
 						complete:function(){
 							str.css({"opacity":0,"width":0,"height":0});
+							callback();
 						}
 					});
 				}

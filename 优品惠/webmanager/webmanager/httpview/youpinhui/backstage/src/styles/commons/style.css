@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body{font-family: "微软雅黑";}
+#logo{height:80px}
+#navBox li a{height: 80px;line-height: 50px;font-size: 16px;}
+#navBox span{width: 25px;height: 30px;}
+
+#side{margin-top: 80px;}
+#navLeft{margin-top: 20px;}
+#navLeft li{margin: 10px 0;border: 1px solid #ddd;width: 100%;border-radius: 5px;}
+#navLeft li a{width: 100%;text-align: center;}
+#erji{margin-bottom: 10px;}
+#erji li{border: 1px solid #ccc;margin-left: 5px;border-radius: 5px;}
+#erji li a:focus{background: #999;}
+#erji li a{color: #222;line-height: 36px;padding-top: 0;height: 36px;}
+#erji .liActive a{color: #fff;}
+#content{border: 1px solid #eee;width: 100%;}
+#content thead th{font-size: 14px;text-align: center;height: 40px;min-width: 80px;}
+#content tbody{text-align: center;line-height: 28px;font-size: 12px;}
+.page{width: 680px;float: right;height: 80px;margin-top: 20px;}
+.page a{float: left;margin-right: 5px;line-height: 28px;color: #666;}
+#lastPage{border: 1px solid #C5C5C5;padding: 0 10px;height: 30px;color: #333;}
+.pageIndex{padding:0 10px;border: 1px solid #C5C5C5;font-size: 10px;color: #333;background: #f6f6f6;}
+#pageIndexActive{color: #ea703c;border: none;background: #fff;}
+#nextPage{border: 1px solid #C5C5C5;padding: 0 10px;height: 30px;color: #333;}
+#toPageIndex{float: left;width: 28px;line-height: 28px;border: 1px solid #C5C5C5;font-size: 10px;color: #333;text-align: center;}
+#submit{padding:0 10px;border: 1px solid #C5C5C5;font-size: 10px;color: #333;background: #f6f6f6;}
+.shanchu,.bianji{font-size: 14px;color: #666;}
+#content tbody input{width: 100%;}
+#queding{width: 100px;height: 44px;background: #D9534F;opacity: 1;border-radius:5px;color: #fff;font-style: normal;font-weight: normal;}
+.liActive{background: #999;}
+#tabLeft .liActive a{color: #fff;}

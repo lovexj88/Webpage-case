@@ -1,0 +1,34 @@
+
+
+.fenleiTip{width: 900px;margin:0 auto;height: 86px;padding-left: 68px;background: #fff;overflow: hidden;}
+.fenleiTip li{float: left;height: 75px;width: 80px;margin-right: 28px;line-height: 12px;text-align: center;font-size: 14px;}
+.fenleiTip li a{color: #222;}
+.fenleiTip li .aActive{color: #eb0007;}
+
+.listTitle{width: 968px;height: 34px;margin: 26px auto 17px;}
+#titleName{color: #333333;font-size: 26px;font-weight: bold;}
+
+.picBox{width: 990px;margin: 0 auto;}
+.picTop ul{height: 20px;margin-top: 22px;padding-left: 8px;}
+.picTop ul li{float: left;font-size: 12px;margin-right: 10px;height: 20px;line-height: 20px;padding: 0 5px;}
+.picTop ul li a{color: #222;}
+.picTop ul li:hover{background: #00BFCF;}
+
+#picBottom{overflow: hidden;margin-top: 20px;width: 990px;}
+#picBottom dl{float: left;width: 312px;height: 437px;background: #fff;border: 1px solid #d6d6d6;margin:10px 8px;}
+#picBottom dl:hover{border: 1px solid #FF504A}
+#picBottom dl img{width: 312px;height: 312px;}
+#picBottom .goodTip{text-align: left;padding-left: 24px;}
+#picBottom .goodTip a{font-size: 16px;color: #222;line-height: 22px;}
+#picBottom .money{margin-top:15px;padding-left: 10px;}
+#picBottom .money .price{height: 32px;padding-left: 12px;font-family: "微软雅黑";color: #333333;font-size: 16px;font-weight: bold;}
+.goodStatus{border-top: 1px solid #e6e6e6;height: 36px;overflow: hidden;padding-left: 16px;padding-top: 8px;}
+.goodStatus span{margin-left: 10px;font-size: 12px;height: 17px;line-height: 16px;text-align: center;color: #FFF;width: 58px;float: left;}
+.status1{background: #fa0e56;}
+.status2{background: #00bfcf;}
+
+
+
+
+
+

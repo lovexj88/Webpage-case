@@ -6,6 +6,7 @@ if(strCookie){
 	$("#tuichu").css({"position":"relative","top":"-10px"});
 	$("#tuichu").on("click",function(){
 		cookieObj.removeCookie("userInfo");
+		cookieObj.removeCookie("shoppingCar");
 		window.location.href="login.html";
 	});
 	$.ajax({

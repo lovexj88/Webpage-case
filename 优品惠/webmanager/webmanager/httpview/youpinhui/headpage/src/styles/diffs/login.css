@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+body{background: #fff;}
+
+.login{width: 968px;height: 92px;margin: 0 auto;padding-top: 25px;}
+.login a{float: left;margin-top: 10px;}
+.login span{float: left;width: 169px;height: 57px;background: url(../img/welland.gif) no-repeat 0 -58px;}
+
+#login1{width: 964px;height: 378px;margin: 0 auto;border: 2px solid #ff8400;}
+.loginLeft{width: 532px;float: left;padding-left: 133px;color: #666666;padding-top: 62px;font:12px/16px "宋体";}
+.loginLeft p{height: 68px;}
+.loginLeft em{width: 340px;height: 25px;display: block;padding: 5px 0 5px 10px;border: 1px solid #a2a2a2;}
+.loginLeft em input{line-height: 24px;border: none;width:314px;float: left;}
+.loginLeft em i{float: left;width: 16px;height: 16px;background:url(../img/welland.gif) 0 -229px;margin-top: 3px;}
+.pwdIn em i{background-position:0 -251px;;} 
+.username span{width: 351px;height: 19px;display: block;}
+.username em{float: left;}
+.username b{float: left;padding-left: 20px;line-height:36px;}
+.pwdIn span{width: 351px;height: 19px;display: block;}
+.loginLeft .readme{height: 40px;}
+.readme input{float: left;width: 13px;height: 13px;margin-top: 2px;}
+.readme i{font-size: 12px;color: #000;float: left;padding-left: 6px;color: #777;}
+.readme a{float: left;color: #0089CF;font-size: 12px;margin-left: 220px;}
+#tijiao_btn{display: block;width: 351px;height: 37px;background: url(../img/welland.gif) 0 -117px no-repeat;}
+.loginRight{width: 217px;background-color: #fff6ec;height: 316px;padding-left: 82px;padding-top: 58px;float: left;}
+.loginItem span{font: 14px '微软雅黑';color: #555555;}
+.loginItem a{display: block;font: 12px '宋体';width: 142px;height: 32px;background: url(../img/welland.gif) 0 -155px no-repeat;line-height: 32px;text-align: center;color: #ff6000;margin-top: 10px;}
+
+.border{margin-top: 50px;height: 1px;background: #e3e3e3;}

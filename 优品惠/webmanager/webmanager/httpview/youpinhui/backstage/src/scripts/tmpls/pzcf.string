@@ -1,0 +1,125 @@
+<nav class="navbar navbar-default navbar-fixed-top" >
+  <div class="container" id="logo">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand" style="padding: 0;">
+        <img src="img/logo.png" style="margin-top: 20px;"/>
+      </a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navShow">
+        <span class="sr-only">切换导航</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navBox" >
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../前端页面/index.html"><span class="glyphicon glyphicon-home"></span>优品惠</a></li>
+        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-list"></span> 我的订单</a></li>
+        <li><a href="users.html"><span class="glyphicon glyphicon-fire"></span> 用户管理</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> 资金管理</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="side">
+  <div class="container container-fluid">
+    <div class="row">
+      <div class="col-xs-2" id="tabLeft">
+        <nav class="navbar navbar-default" id="navLeft">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav" id="fenlei">
+                  <li><a href="index.html">全部商品</a></li>
+                  <li class="liActive"><a href="pzcf.html">品质厨房</a></li>
+                  <li><a href="msms.html">美食民生</a></li>
+                  <li><a href="jksh.html">健康生活</a></li>
+                  <li><a href="mlcd.html">魅力穿戴</a></li>
+                  <li><a href="zbcc.html">珠宝收藏</a></li>
+                  <li><a href="mflz.html">美肤靓妆</a></li>
+                </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-xs-10" style="padding-top: 10px;">
+        <p class="text-success">
+          <ul class="nav navbar-nav pull-left" id="erji">
+            <li class="liActive"><a href="#">电视热销</a></li>
+            <li><a href="#">品质厨具</a></li>
+            <li><a href="#">厨房电器</a></li>
+            <li><a href="#">厨房用具</a></li>
+          </ul>
+          <button class="btn btn-primary btn-xs pull-right" id="addGood" data-toggle="modal" data-target="#myModal" style="float: right;font-size: 14px;margin: 7px 10px;">新增商品</button>
+        </p>
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                  <h3 class="modal-title" style="text-align: center;">请输入你要添加的商品信息</h3>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <form role="form">
+                        <div class="form-group col-lg-12">
+                          <label for="goodId">商品编号</label>
+                          <input type="text" class="form-control" id="goodId" placeholder="请输入要添加的商品编号">
+                        </div>
+                        <div class="form-group col-lg-12">
+                          <label for="goodName">商品名称</label>
+                          <input type="text" class="form-control" id="goodName" placeholder="请输入要添加的商品名称">
+                        </div>
+                        <div class="form-group col-lg-12">
+                          <label for="goodPic">商品图片</label>
+                          <input type="text" class="form-control" id="goodPic" placeholder="请输入要添加的商品图片">
+                        </div>
+                        <div class="form-group col-lg-12">
+                          <label for="goodIntro">商品介绍</label>
+                          <input type="text" class="form-control" id="goodIntro" placeholder="请输入要添加的商品介绍">
+                        </div>
+                        <div class="form-group col-lg-6">
+                          <label for="goodNum">商品库存</label>
+                          <input type="text" class="form-control" id="goodNum" placeholder="请输入要添加的商品库存">
+                        </div>
+                        <div class="form-group col-lg-6">
+                          <label for="goodPrice">商品价格</label>
+                          <input type="text" class="form-control" id="goodPrice" placeholder="请输入要添加的商品价格">
+                        </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="close" data-dismiss="modal" id="queding">确定</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <table class="table-striped" id="content" border="1">
+          <thead>
+            <th>全选&nbsp;&nbsp;<input type="checkbox" /></th>
+            <th>商品编号</th>
+            <th>商品名称</th>
+            <th>商品图片</th>
+            <th>商品介绍</th>
+            <th>商品库存</th>
+            <th>商品价格</th>
+            <th>编辑</th>
+            <th>删除</th>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <p class="page">
+          <a id="lastPage" href="#">&lt;上一页</a>
+          <a >当前页:<a id="pageNow">1</a></a>
+          <a id="nextPage" href="#">下一页&gt;</a>
+          <a>&nbsp;&nbsp;&nbsp;&nbsp;到第</a>
+          <input type="text" id="toPageIndex" value="1">
+          <a>&nbsp;&nbsp;页&nbsp;&nbsp;</a>
+          <a href="#" id="submit">确认</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

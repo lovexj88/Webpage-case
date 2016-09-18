@@ -41,7 +41,7 @@ body{background: #fff;}
 .trouble a{color:#0089CF;}
 .trouble i{color: #eb0007;font: 13px/16px "微软雅黑";}
 .checkInfo{font-size: 12px;}
-.repwdIn b,.phoneIn b{font-size: 12px;line-height: 36px;padding-left: 20px;}
+.repwdIn b,.phoneIn b,.pwdIn b{font-size: 12px;line-height: 36px;padding-left: 20px;}
 
 #reg2{display: none;}
 

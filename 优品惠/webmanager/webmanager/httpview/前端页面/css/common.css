@@ -6,6 +6,7 @@ a{text-decoration: none;}
 img{border: none;}
 i,em,b{font-style: normal;font-weight: normal;}
 body{font-family: "微软雅黑";background: #F2F2F2;}
+html,body{width: 100%;height: 100%;}
 
 .headerBox{height: 80px;background: #FB2980;}
 .header{margin: 0 auto;width: 1000px;}

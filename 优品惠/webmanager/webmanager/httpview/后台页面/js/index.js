@@ -189,7 +189,7 @@ $(function(){
 							alert("删除成功!");
 						},
 						error:function(){
-						alert("删除失败!");
+							alert("删除失败!");
 						}
 					});
 					location.reload();

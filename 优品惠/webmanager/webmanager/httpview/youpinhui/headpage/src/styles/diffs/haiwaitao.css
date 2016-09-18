@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.banner img{display: block;}
+
+.haiwaiPic{height: 80px;background: #fff;text-align: center;}
+
+.jrsx{overflow: hidden;width: 1000px;margin: 0 auto;}
+.jrsx_tip{height: 20px;line-height: 20px;margin:23px 0;border-bottom: 2px solid #333;text-align: center;}
+.jptj_pic{width: 1020px;margin-top: 50px;}
+.jptj_pic li{margin: 10px;float: left;}
+.jptj_pic li:hover img{opacity: 0.8;box-shadow: 2px 2px 2px 2px #D3D3D3;}
+
+.global{width: 1000px;margin: 0 auto;overflow: hidden;}
+.global_tip{height: 20px;line-height: 20px;margin:23px 0;border-bottom: 2px solid #333;text-align: center;}
+.globalBottom dl{width:998px;height: 315px;padding: 0;margin: 20px 0 0 0;}
+.globalBottom dl dt{padding: 0 15px;float: left;}
+.globalBottom dl dt img{width: 543px;height: 315px;}
+.globalBottom dl dd{padding: 0 15px;float: left;width: 385px;}
+.hwtTip{height: 48px;border-bottom: 1px dashed #ddd;}
+.hwtTip a{float: left;}
+.hwtTip a img{width: 114px;height: 24px;margin-top: 12px;}
+.hwtTip em{float: left;}
+.hwtTip em img{width: 32px;height: 24px;}
+.hwtTip i{line-height: 48px;font-size: 12px;color: #666;float: left;width: 180px;height: 48px;}
+.hwtTip span{line-height: 48px;font-size: 12px;color: #666;float: left;}
+/*.hwtTip .timesub{line-height: 48px;height: 48px;font-size: 12px;color: #666;float: left;width: 80px;}*/
+.hwtName{width: 385px;font-size: 18px;font-weight: 700;line-height: 24px;height: 24px;overflow: hidden;width: 360px;margin-top: 15px;margin-bottom: 18px;text-align: left;}
+.hwtName a{color: #222;}
+.goodIntro{line-height: 20px;height: 80px;overflow: hidden;font-size: 14px;text-align: left;}
+.goodIntro a{color: #222;}
+.money{padding-top: 50px;}
+

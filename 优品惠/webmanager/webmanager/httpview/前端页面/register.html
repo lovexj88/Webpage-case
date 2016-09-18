@@ -66,7 +66,7 @@
 				<p class="phoneIn">
 					<span>手机号码：</span>
 					<em class="">
-						<input type="text" placeholder="请输入手机号"/>
+						<input type="text" placeholder="请输入手机号" id="phoneNumber"/>
 						<i></i>
 					</em>
 					<b></b>
@@ -75,7 +75,7 @@
 					<span>验证码：</span>
 					<input type="text" />
 					<em id="yanzhengma"><img src="img/captcha1.png" id="checkCode" /></em>
-					<i>看不清，<a href="#" id="change">换一张</a></i>
+					<i>看不清，<a href="#" class="change">换一张</a></i>
 					<b class="checkInfo"></b>
 				</p>
 				<p class="pwdIn">
@@ -122,7 +122,7 @@
 				<p class="phoneIn">
 					<span>邮箱：</span>
 					<em class="">
-						<input type="text" placeholder="请输入邮箱" />
+						<input type="text" placeholder="请输入邮箱" id="email" />
 						<i></i>
 					</em>
 					<b></b>
@@ -131,7 +131,7 @@
 					<span>验证码：</span>
 					<input type="text" />
 					<em id="yanzhengma"><img src="img/captcha3.png" /></em>
-					<i>看不清，<a href="#">换一张</a></i>
+					<i>看不清，<a href="#" class="change">换一张</a></i>
 					<b class="checkInfo"></b>
 				</p>
 				<p class="pwdIn">
@@ -316,8 +316,12 @@
 			$(function(){
 				var arrAllUser=[];
 				var codeCheck=false;
+				var pwdFirstCheck=false;
 				var pwdCheck=false;
 				var nameCheck=false;
+				var patternPhone=/^[1-3]\d{10}$/;
+				var patternEmail=/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+				var patternPwd=/^[a-z0-9_-]{6,20}$/;
 				var isRead=$(".readme input").prop("checked");
 				var codeArr=["U79E","QP7G","KE7N","92XD","WX6H","UNC7","D57G","D8KU","NCZE"];
 				$(".regnav1").click(function(){
@@ -342,10 +346,12 @@
 				});
 				var ranCode=Math.ceil(Math.random()*8);
 				$("#checkCode").attr("src","img/captcha"+ranCode+".png");
-				$("#change").on("click",function(){
-					ranCode=Math.ceil(Math.random()*8);
-					$("#checkCode").attr("src","img/captcha"+ranCode+".png");
-				});
+				$(".change").each(function(){
+					$(this).on("click",function(){
+						ranCode=Math.ceil(Math.random()*8);
+						$(this).parent().prev().children().attr("src","img/captcha"+ranCode+".png");
+					});
+				})
 				$("body").on("blur",".yanzheng input",function(){
 					if($(this).val()==codeArr[ranCode-1]){
 						$(this).parent().children().last().css("color","green");
@@ -356,9 +362,20 @@
 						$(this).parent().children().last().html("验证码不正确！！");
 					}
 				});
+				$("body").on("blur",".pwdIn input",function(){
+					var result=patternPwd.test($(this).val());
+					if(result){
+						pwdFirstCheck=true;
+						$(this).parent().next().css("color","green");
+						$(this).parent().next().html("密码可用！！");
+					}else{
+						$(this).parent().next().css("color","red");
+						$(this).parent().next().html("密码格式不正确！！");
+					}
+				});
 				$("body").on("blur",".repwdIn input",function(){
 					var firstPwd=$(this).parent().parent().prev().children().eq(1).children().eq(0);
-					if($(this).val()==firstPwd.val()){
+					if($(this).val()==firstPwd.val()&&$(this).val()!=""){
 						$(this).parent().next().css("color","green");
 						$(this).parent().next().html("两次密码输入一致！！");
 						pwdCheck=true;
@@ -370,6 +387,7 @@
 				$(".phoneIn input").on("blur",function(){
 					nameCheck=false;
 					var objNow=$(this);
+					var nowId=$(this).attr("id");
 					$.ajax({
 						type: "GET",
 						url: "http://localhost:8080/product/GetProductById_get?id=00001",
@@ -385,8 +403,27 @@
 									}
 								}
 								if(!nameCheck){
-									objNow.parent().next().css("color","green");
-									objNow.parent().next().html("用户名可使用！");
+									if(nowId=="phoneNumber"){
+										var result=patternPhone.test(objNow.val());
+										if(result){
+											objNow.parent().next().css("color","green");
+											objNow.parent().next().html("用户名可使用！");
+										}else{
+											nameCheck=false;
+											objNow.parent().next().css("color","red");
+											objNow.parent().next().html("请输入正确的手机号！");
+										}
+									}else{
+										var result=patternEmail.test(objNow.val());
+										if(result){
+											objNow.parent().next().css("color","green");
+											objNow.parent().next().html("用户名可使用！");
+										}else{
+											nameCheck=false;
+											objNow.parent().next().css("color","red");
+											objNow.parent().next().html("请输入正确的邮箱！");
+										}
+									}
 								}
 							}else{
 								objNow.parent().next().css("color","red");
@@ -407,7 +444,7 @@
 					}
 				})
 				$(".tijiao a").click(function(){
-					if(codeCheck&&pwdCheck&&!nameCheck&&isRead){
+					if(codeCheck&&pwdFirstCheck&&pwdCheck&&!nameCheck&&isRead){
 						var userName;
 						var pwd;
 						if($(this).attr("id")=="tj1"){
