@@ -2,7 +2,7 @@
 
 ###以上都是本人写的一些网站案例，再次开源给大家，希望互帮互助，多多互相学习。
 
-###1、[BEANCMS](http://www.takozhang.cn/HTML/BEANCMS/){:target="_blank"}
+###1、[BEANCMS](http://www.takozhang.cn/HTML/BEANCMS/)
 
 ###2、[goToWay](http://www.takozhang.cn/HTML/goToWay/)
 
